@@ -1,1 +1,11 @@
+@import 'base/variables';
+// Vendors
+@import 'vendors/bootstrap/bootstrap-grid';
+@import 'vendors/bootstrap/bootstrap-reboot';
+@import 'vendors/bootstrap/bootstrap-utilities';
+// Base Styles
+@import 'base/general';
+@import 'base/buttons';
+// Theme Styles
 @import 'layouts/layouts';
+@import 'pages/pages';

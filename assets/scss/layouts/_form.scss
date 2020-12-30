@@ -1,0 +1,58 @@
+.form {
+    label {
+        font-family: $poppins;
+        font-weight: regular;
+        font-size: 14px;
+        display: block;
+    }
+    input {
+        &[type="text"],
+        &[type="password"] {
+            margin: 10px 0;
+            border: 0.5px solid #BBBBBB;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            @media #{$tablet} {
+                padding: 9px;
+            }
+        }
+    }
+    button {
+        border: 0;
+        background-color: initial;
+        margin-top: 23px;
+    }
+    &--white {
+        background-color: white;
+    }
+    &--bordered {
+        border-radius: 15px;
+    }
+    &--login {
+        padding: 25px;
+        width: 340px;
+        min-height: 300px;
+        @media #{$tablet} {
+            width: 612px;
+            height: 425px;
+            padding: 40px;
+        }
+        @media #{$desktop} {
+            padding: 70px;
+        }
+    }
+    &__footer {
+        margin-top: 37px;
+        a,
+        label {
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a {
+            color: $blue-link;
+        }
+    }
+}

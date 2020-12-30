@@ -1,0 +1,40 @@
+.login {
+    background: transparent linear-gradient(60deg, #7721A0 0%, #264ECC 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    position: relative;
+    &:before {
+        @media #{$desktop} {
+            content: url(../images/login-background-points.png);
+            position: absolute;
+            top: 27px;
+            left: 27px;
+            line-height: 0;
+        }
+    }
+    &:after {
+        @media #{$desktop} {
+            content: url(../images/gear-wheel-login-background.png);
+            bottom: 0;
+            position: absolute;
+            right: 0;
+            left: initial;
+            top: initial;
+            line-height: 0;
+        }
+    }
+    &__content-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .logo {
+        font-family: $poppins;
+        color: white;
+        font-size: 61px;
+        max-width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+}

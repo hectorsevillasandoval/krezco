@@ -4,11 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+
 </head>
 
 <body>
-    <h1 class="test">Este es una prueba 345</h1>
+    <div class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 align-div--middle">
+                    <div class="login__content-wrapper">
+                        <div class="logo">KREZCO</div>
+                        <div class="form form--login form--white form--bordered">
+                            <form action="">
+                                <div class="form__wrapper">
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name">
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" name="password" id="password">
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <button type="submit" class="btn btn--gradient btn--icon-door">Acceder</button>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row form__footer row">
+                                        <div class="col">
+                                            <input type="checkbox" name="rememberpw" id="rememberpw">
+                                            <label for="rememberpw">Recordar mi contraseña</label>
+                                        </div>
+                                        <div class="col text-end">
+                                            <a href="rememberpw.html" class="link">Olvidé mi contraseña</a>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="regular-content text-color--white text-center pt-4">
+                            ¿Aún no tienes una cuenta? <a href="/register" class="link-color--purple">Forma parte de la comunidad KREZCO</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
