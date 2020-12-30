@@ -10107,6 +10107,11 @@ a {
   width: 340px;
   min-height: 300px;
 }
+@media screen and (min-width: 480px) {
+  .form--login {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .form--login {
     width: 612px;
@@ -10132,9 +10137,14 @@ a {
   color: #0084FF;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .login {
   background: transparent linear-gradient(60deg, #7721A0 0%, #264ECC 100%) 0% 0% no-repeat padding-box;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 @media screen and (min-width: 992px) {
@@ -10162,6 +10172,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
 }
 .login .logo {
   font-family: "Poppins";

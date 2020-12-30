@@ -34,6 +34,9 @@
         padding: 25px;
         width: 340px;
         min-height: 300px;
+        @media #{$mobile} {
+            width: 480px;
+        }
         @media #{$tablet} {
             width: 612px;
             height: 425px;
