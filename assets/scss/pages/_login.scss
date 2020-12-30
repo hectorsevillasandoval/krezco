@@ -1,12 +1,6 @@
-html,
-body {
-    height: 100%;
-}
-
 .login {
     background: transparent linear-gradient(60deg, #7721A0 0%, #264ECC 100%) 0% 0% no-repeat padding-box;
-    //height: 100vh;
-    height: 100%;
+    min-height: 100vh;
     position: relative;
     &:before {
         @media #{$desktop} {
@@ -29,11 +23,18 @@ body {
         }
     }
     &__content-wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 99;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media #{$tablet} {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
     }
     .logo {
         font-family: $poppins;

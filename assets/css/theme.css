@@ -10038,7 +10038,7 @@ a {
 }
 
 .regular-content {
-  font: normal normal normal 14px/18px "Work Sans";
+  font: normal normal normal 12px/18px "Work Sans";
 }
 
 .link-color--purple {
@@ -10080,16 +10080,21 @@ a {
 }
 .form input[type=text], .form input[type=password] {
   margin: 10px 0;
-  border: 0.5px solid #BBBBBB;
+  border: 1px solid #BBBBBB;
   border-radius: 5px;
   display: block;
+  font-size: 16px;
   width: 100%;
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .form input[type=text], .form input[type=password] {
-    padding: 9px;
+    padding: 9px 15px;
   }
+}
+.form input[type=text]:focus, .form input[type=password]:focus {
+  border-color: #D59EFF;
+  outline: initial;
 }
 .form button {
   border: 0;
@@ -10104,8 +10109,10 @@ a {
 }
 .form--login {
   padding: 25px;
-  width: 340px;
+  width: 325px;
   min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .form--login {
@@ -10137,14 +10144,9 @@ a {
   color: #0084FF;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 .login {
   background: transparent linear-gradient(60deg, #7721A0 0%, #264ECC 100%) 0% 0% no-repeat padding-box;
-  height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 @media screen and (min-width: 992px) {
@@ -10168,11 +10170,20 @@ body {
   }
 }
 .login__content-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 99;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .login__content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
 }
 .login .logo {
   font-family: "Poppins";

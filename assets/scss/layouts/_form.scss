@@ -9,13 +9,18 @@
         &[type="text"],
         &[type="password"] {
             margin: 10px 0;
-            border: 0.5px solid #BBBBBB;
+            border: 1px solid #BBBBBB;
             border-radius: 5px;
             display: block;
+            font-size: 16px;
             width: 100%;
             padding: 5px;
             @media #{$tablet} {
-                padding: 9px;
+                padding: 9px 15px;
+            }
+            &:focus {
+                border-color: $purple-link;
+                outline: initial;
             }
         }
     }
@@ -32,8 +37,10 @@
     }
     &--login {
         padding: 25px;
-        width: 340px;
+        width: 325px;
         min-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
         @media #{$mobile} {
             width: 480px;
         }
