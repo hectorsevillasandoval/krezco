@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 align-div--middle">
+                    <div class="login__content-wrapper">
+                        <div class="logo">KREZCO</div>
+                        <div class="form form--login form--white form--bordered">
+                            <form action="">
+                                <div class="form__wrapper">
+                                    <!-- Starting form row -->
+                                    <div class="form__title text-center">
+                                        Regístrate
+                                    </div>
+                                    <!-- End Form Row -->
+                                    <!-- Starting form row -->
+                                    <div class="form__row row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" name="nombre" id="nombre" required>
+                                            <span class="form__validation"></span>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <label for="perfil">Tipo de Perfil</label>
+                                            <select name="perfil" id="perfil">
+                                                <option value="candidato">Candidato</option>
+                                                <option value="empresa">Empresa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <label for="email">Correo Electrónico</label>
+                                            <input type="email" name="email" id="email" required>
+                                            <span class="form__validation"></span>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <label for="perfil">Tipo de Perfil</label>
+                                            <select name="perfil" id="perfil">
+                                                <option value="candidato">Candidato</option>
+                                                <option value="empresa">Empresa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <label for="usuario">Usuario</label>
+                                            <input type="text" name="usuario" id="usuario" required>
+                                            <span class="form__validation"></span>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <label for="telefono">Teléfono</label>
+                                            <input type="tel" name="telefono" id="telefono">
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <button type="submit" class="btn btn--gradient btn__icon btn__icon--door">Regístrate</button>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row form__footer row">
+                                        <div class="col-8 col-md-6">
+                                            <input type="checkbox" name="rememberpw" id="rememberpw">
+                                            <label for="rememberpw">Recordar mi contraseña</label>
+                                        </div>
+                                        <div class="col-4 col-md-6 text-end">
+                                            Ya eres usuario? <a href="rememberpw.html" class="link">Accede</a>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="regular-content text-color--white text-center pt-4">
+                            ¿Aún no tienes una cuenta? <a href="/register" class="link-color--purple">Forma parte de la comunidad KREZCO</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

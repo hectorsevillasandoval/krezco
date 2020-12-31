@@ -16199,6 +16199,9 @@ a {
 .form__row {
   position: relative;
 }
+.form__row .col {
+  position: relative;
+}
 .form__title {
   color: #646464;
   font-size: 22px;
@@ -16214,11 +16217,11 @@ a {
 }
 .form label {
   font-family: "Poppins";
-  font-weight: regular;
+  font-weight: 400;
   font-size: 14px;
   display: block;
 }
-.form input[type=text], .form input[type=password], .form input[type=email] {
+.form input[type=text], .form input[type=password], .form input[type=email], .form input[type=tel] {
   margin: 10px 0;
   border: 1px solid #BBBBBB;
   border-radius: 5px;
@@ -16229,23 +16232,23 @@ a {
   color: #414141;
   padding: 15px 40px 15px 15px;
 }
-.form input[type=text]:focus, .form input[type=password]:focus, .form input[type=email]:focus {
+.form input[type=text]:focus, .form input[type=password]:focus, .form input[type=email]:focus, .form input[type=tel]:focus {
   border-color: #3c3c3c;
   outline: initial;
 }
-.form input[type=text] + span, .form input[type=password] + span, .form input[type=email] + span {
+.form input[type=text] + span, .form input[type=password] + span, .form input[type=email] + span, .form input[type=tel] + span {
   display: block;
   position: absolute;
   bottom: 13px;
   right: 15px;
 }
-.form input[type=text] + span:before, .form input[type=password] + span:before, .form input[type=email] + span:before {
+.form input[type=text] + span:before, .form input[type=password] + span:before, .form input[type=email] + span:before, .form input[type=tel] + span:before {
   content: "";
 }
-.form input[type=text]:valid, .form input[type=password]:valid, .form input[type=email]:valid {
+.form input[type=text]:valid, .form input[type=password]:valid, .form input[type=email]:valid, .form input[type=tel]:valid {
   border-color: green;
 }
-.form input[type=text]:valid + span:before, .form input[type=password]:valid + span:before, .form input[type=email]:valid + span:before {
+.form input[type=text]:valid + span:before, .form input[type=password]:valid + span:before, .form input[type=email]:valid + span:before, .form input[type=tel]:valid + span:before {
   content: "";
   color: green;
   font-family: "Font Awesome 5 Free";
@@ -16277,7 +16280,7 @@ a {
 @media screen and (min-width: 768px) {
   .form--login {
     width: 612px;
-    height: 425px;
+    min-height: 425px;
     padding: 40px;
   }
 }
@@ -16302,12 +16305,14 @@ a {
 }
 .form__footer {
   margin-top: 37px;
+  font-size: 12px;
+  line-height: 12px;
 }
 .form__footer a,
 .form__footer label {
   font-size: 12px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .form__footer a {
   color: #0084FF;

@@ -1,6 +1,9 @@
 .form {
     &__row {
         position: relative;
+        .col {
+            position: relative;
+        }
     }
     &__title {
         color: $gray;
@@ -17,14 +20,15 @@
     }
     label {
         font-family: $poppins;
-        font-weight: regular;
+        font-weight: 400;
         font-size: 14px;
         display: block;
     }
     input {
         &[type="text"],
         &[type="password"],
-        &[type="email"] {
+        &[type="email"],
+        &[type="tel"] {
             margin: 10px 0;
             border: 1px solid #BBBBBB;
             border-radius: 5px;
@@ -85,7 +89,7 @@
         }
         @media #{$tablet} {
             width: 612px;
-            height: 425px;
+            min-height: 425px;
             padding: 40px;
         }
         @media #{$desktop} {
@@ -109,11 +113,13 @@
     }
     &__footer {
         margin-top: 37px;
+        font-size: 12px;
+        line-height: 12px;
         a,
         label {
             font-size: 12px;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: top;
         }
         a {
             color: $blue-link;
