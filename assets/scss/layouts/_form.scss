@@ -19,13 +19,13 @@
                 padding: 9px 15px;
             }
             &:focus {
-                border-color: $purple-link;
+                border-color: darken(#BBBBBB, 50%);
                 outline: initial;
             }
         }
     }
     button {
-        border: 0;
+        //border: 0;
         background-color: initial;
         margin-top: 23px;
     }

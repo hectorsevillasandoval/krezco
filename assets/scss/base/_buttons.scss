@@ -11,6 +11,7 @@
         color: white;
         border-radius: 6px;
         transition: ease-in background 0.5s;
+        border: 1px solid white;
         &:hover {
             background: transparent linear-gradient(269deg, #5300FF 0%, #9100FF 100%) 0% 0% no-repeat padding-box;
         }
