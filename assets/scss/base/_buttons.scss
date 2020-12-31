@@ -16,4 +16,11 @@
             background: transparent linear-gradient(269deg, #5300FF 0%, #9100FF 100%) 0% 0% no-repeat padding-box;
         }
     }
+    &__icon {
+        @extend %fa-icon;
+        @extend .fas;
+        &--door {
+            content: fa-content($fa-var-user);
+        }
+    }
 }
