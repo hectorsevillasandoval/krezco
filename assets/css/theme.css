@@ -10113,6 +10113,8 @@ a {
   min-height: 300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 99;
 }
 @media screen and (min-width: 480px) {
   .form--login {
@@ -10130,6 +10132,20 @@ a {
   .form--login {
     padding: 70px;
   }
+}
+@media screen and (min-width: 992px) {
+  .form--login:before, .form--login:after {
+    content: url(../images/login-dots-images.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -90px;
+    z-index: -9;
+  }
+}
+.form--login:after {
+  right: -90px;
+  left: initial;
 }
 .form__footer {
   margin-top: 37px;

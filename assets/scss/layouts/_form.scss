@@ -41,6 +41,8 @@
         min-height: 300px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        z-index: 99;
         @media #{$mobile} {
             width: 480px;
         }
@@ -51,6 +53,21 @@
         }
         @media #{$desktop} {
             padding: 70px;
+        }
+        &:before,
+        &:after {
+            @media #{$desktop} {
+                content: url(../images/login-dots-images.svg);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -90px;
+                z-index: -9;
+            }
+        }
+        &:after {
+            right: -90px;
+            left: initial;
         }
     }
     &__footer {
