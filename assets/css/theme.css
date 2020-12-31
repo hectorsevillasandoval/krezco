@@ -16236,7 +16236,7 @@ a {
 .form input[type=text] + span, .form input[type=password] + span, .form input[type=email] + span {
   display: block;
   position: absolute;
-  bottom: 15px;
+  bottom: 13px;
   right: 15px;
 }
 .form input[type=text] + span:before, .form input[type=password] + span:before, .form input[type=email] + span:before {
