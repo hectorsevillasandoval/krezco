@@ -16227,6 +16227,17 @@ a {
   margin: 10px 0 0 0;
   cursor: pointer;
   width: 100%;
+  position: relative;
+}
+.custom-select-opener:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: #989898;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8%;
 }
 
 .custom-select-panel {

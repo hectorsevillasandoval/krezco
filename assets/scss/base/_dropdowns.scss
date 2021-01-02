@@ -31,6 +31,17 @@
     margin: 10px 0 0 0;
     cursor: pointer;
     width: 100%;
+    position: relative;
+    &:after {
+        content: '\f0d7';
+        font-family: $fontawesome;
+        color: $light-gray;
+        font-size: 22px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8%;
+    }
 }
 
 .custom-select-panel {
