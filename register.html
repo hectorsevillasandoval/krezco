@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Register Form</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 
@@ -52,11 +52,8 @@
                                             <span class="form__validation"></span>
                                         </div>
                                         <div class="col-sm-12 col-md-4">
-                                            <label for="perfil">Tipo de Perfil</label>
-                                            <select name="perfil" id="perfil">
-                                                <option value="candidato">Candidato</option>
-                                                <option value="empresa">Empresa</option>
-                                            </select>
+                                            <label for="contrasena">Contraseña</label>
+                                            <input type="password" name="contrasena" id="contrasena">
                                         </div>
                                     </div>
                                     <!-- End Form Row -->
@@ -66,7 +63,7 @@
                                         <div class="col-sm-12 col-md-8">
                                             <label for="usuario">Usuario</label>
                                             <input type="text" name="usuario" id="usuario" required>
-                                            <span class="form__validation"></span>
+                                            <span class="form__validation form__validation--error">Nombre de usuario no disponible</span>
                                         </div>
                                         <div class="col-sm-12 col-md-4">
                                             <label for="telefono">Teléfono</label>
@@ -98,16 +95,15 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="regular-content text-color--white text-center pt-4">
-                            ¿Aún no tienes una cuenta? <a href="/register" class="link-color--purple">Forma parte de la comunidad KREZCO</a>
-                        </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-
+    <script src="./assets/js/vendors/custom-select.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,12 @@
 .form {
     &__row {
         position: relative;
-        .col {
+        margin-bottom: 10px;
+        div[class*='col'] {
             position: relative;
+            span.form__validation {
+                right: 8%;
+            }
         }
     }
     &__title {
@@ -24,16 +28,33 @@
         font-size: 14px;
         display: block;
     }
+    &__validation {
+        font-size: 12px;
+        &--error {
+            background-color: $light-red;
+            color: $red;
+            display: block;
+            position: initial !important;
+            transform: initial !important;
+            border-radius: 5px;
+            padding: 10px;
+            &:before {
+                content: '\f06a' !important;
+                font-family: $fontawesome;
+                font-size: 14px;
+                padding-right: 5px;
+            }
+        }
+    }
     input {
         &[type="text"],
         &[type="password"],
         &[type="email"],
         &[type="tel"] {
-            margin: 10px 0;
+            margin: 10px 0 0 0;
             border: 1px solid #BBBBBB;
             border-radius: 5px;
             display: block;
-            font-size: 16px;
             width: 100%;
             font-size: 14px;
             color: $text;
@@ -46,7 +67,7 @@
             &+span {
                 display: block;
                 position: absolute;
-                bottom: 13px;
+                bottom: 16px;
                 right: 15px;
                 &:before {
                     content: "";
@@ -61,7 +82,7 @@
                 }
             }
             &:invalid {
-                //border-color: red;
+                border-color: $red;
             }
         }
     }
