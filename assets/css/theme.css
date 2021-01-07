@@ -16353,7 +16353,7 @@ a {
   font-family: "Font Awesome 5 Free";
 }
 .form input[type=text]:invalid, .form input[type=password]:invalid, .form input[type=email]:invalid, .form input[type=tel]:invalid {
-  border-color: #F40105;
+  /*border-color: $red;*/
 }
 .form button {
   background-color: initial;
@@ -16364,6 +16364,9 @@ a {
 }
 .form--bordered {
   border-radius: 15px;
+}
+.form--token {
+  min-height: 260px !important;
 }
 .form--login {
   padding: 25px;

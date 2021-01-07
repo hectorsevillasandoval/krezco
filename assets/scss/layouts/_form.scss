@@ -82,7 +82,7 @@
                 }
             }
             &:invalid {
-                border-color: $red;
+                /*border-color: $red;*/
             }
         }
     }
@@ -96,6 +96,9 @@
     }
     &--bordered {
         border-radius: 15px;
+    }
+    &--token {
+        min-height: 260px !important;
     }
     &--login {
         padding: 25px;
