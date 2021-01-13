@@ -86,6 +86,27 @@
             }
         }
     }
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: $poppins;
+        border: 1px solid #BBBBBB;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: $text;
+        padding: 15px 40px 15px 15px;
+        margin-top: 10px;
+        background-image: url(../images/chevron-down-outline.svg);
+        background-repeat: no-repeat;
+        background-position: right .7rem top 50%;
+        background-size: .85rem auto;
+        &::-ms-expand {
+            display: none;
+        }
+    }
     button {
         //border: 0;
         background-color: initial;

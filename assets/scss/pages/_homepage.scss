@@ -1,0 +1,52 @@
+.temp-logo {
+    font-size: 61px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header {
+    background-color: $purple-link;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__menu {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            max-width: 934px;
+            margin-left: auto;
+            margin-bottom: 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &Item {
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: white;
+                letter-spacing: 1.4px;
+                @media #{$desktop-large} {
+                    font-size: 14px;
+                }
+                &:hover,
+                &:focus {
+                    opacity: 0.4;
+                }
+                &.btn {
+                    text-transform: initial;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    box-shadow: 0px 10px 20px hsl(265deg 100% 50% / 45%);
+                    @media #{$desktop} {
+                        padding-left: 35px;
+                        padding-right: 35px;
+                    }
+                    &:hover,
+                    &:focus {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

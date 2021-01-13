@@ -16355,6 +16355,27 @@ a {
 .form input[type=text]:invalid, .form input[type=password]:invalid, .form input[type=email]:invalid, .form input[type=tel]:invalid {
   /*border-color: $red;*/
 }
+.form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Poppins";
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  padding: 15px 40px 15px 15px;
+  margin-top: 10px;
+  background-image: url(../images/chevron-down-outline.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.85rem auto;
+}
+.form select::-ms-expand {
+  display: none;
+}
 .form button {
   background-color: initial;
   margin-top: 23px;
@@ -16472,6 +16493,57 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
+}
+
+.temp-logo {
+  font-size: 61px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header {
+  background-color: #D59EFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header__menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  max-width: 934px;
+  margin-left: auto;
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menuItem a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.4px;
+}
+@media screen and (min-width: 1200px) {
+  .header__menuItem a {
+    font-size: 14px;
+  }
+}
+.header__menuItem a:hover, .header__menuItem a:focus {
+  opacity: 0.4;
+}
+.header__menuItem a.btn {
+  text-transform: initial;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0px 10px 20px rgba(106, 0, 255, 0.45);
+}
+@media screen and (min-width: 992px) {
+  .header__menuItem a.btn {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.header__menuItem a.btn:hover, .header__menuItem a.btn:focus {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=theme.css.map */
