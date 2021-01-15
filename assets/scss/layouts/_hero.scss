@@ -1,7 +1,9 @@
 .hero {
     min-height: 800px;
     background-color: $purple;
+    background-image: url(../images/background-temp.jpg);
     margin-bottom: 100px;
+    border-radius: 0px 0px 200px 200px;
     &__wrapper {
         margin-top: 120px;
         margin-bottom: 0 !important;
@@ -28,11 +30,20 @@
         }
     }
     &__image {
+        position: relative;
+        img {
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            right: 0;
+        }
         @media #{$desktop} {
             height: 680px;
             width: 510px;
             margin-left: auto;
-            background-color: $red;
+            //background-color: $red;
         }
     }
     &__title {

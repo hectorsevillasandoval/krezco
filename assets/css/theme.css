@@ -17470,7 +17470,9 @@ a {
 .hero {
   min-height: 800px;
   background-color: #5A0D7E;
+  background-image: url(../images/background-temp.jpg);
   margin-bottom: 100px;
+  border-radius: 0px 0px 200px 200px;
 }
 .hero__wrapper {
   margin-top: 120px;
@@ -17497,12 +17499,22 @@ a {
     width: 50%;
   }
 }
+.hero__image {
+  position: relative;
+}
+.hero__image img {
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  right: 0;
+}
 @media screen and (min-width: 992px) {
   .hero__image {
     height: 680px;
     width: 510px;
     margin-left: auto;
-    background-color: #F40105;
   }
 }
 .hero__title {
