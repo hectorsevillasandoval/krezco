@@ -36,7 +36,7 @@
                                         </div>
                                         <div class="col-sm-12 col-md-4">
                                             <label for="perfil">Tipo de Perfil</label>
-                                            <select name="perfil" id="perfil">
+                                            <select name="perfil" id="rol">
                                                 <option value="candidato">Candidato</option>
                                                 <option value="empresa">Empresa</option>
                                             </select>
@@ -63,9 +63,18 @@
                                         <div class="col-sm-12 col-md-8">
                                             <label for="usuario">Usuario</label>
                                             <input type="text" name="usuario" id="usuario" required>
-                                            <span class="form__validation form__validation--error">Nombre de usuario no disponible</span>
+                                            <!--<span class="form__validation form__validation--error">Nombre de usuario no disponible</span>-->
                                         </div>
                                         <div class="col-sm-12 col-md-4">
+                                            <label for="telefono">Confirmar</label>
+                                             <input type="password" name="contrasena" id="contrasena">
+                                         </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row row">
+                                        <div class="col-sm-12">
                                             <label for="telefono">Teléfono</label>
                                             <input type="tel" name="telefono" id="telefono">
                                         </div>

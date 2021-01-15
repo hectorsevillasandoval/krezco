@@ -5,11 +5,13 @@
 @import 'vendors/bootstrap/bootstrap-utilities';
 @import 'vendors/fontawesome/fontawesome.scss';
 @import 'vendors/fontawesome/solid.scss';
+@import 'vendors/fontawesome/brands.scss';
 // Base Styles
 @import 'base/general';
 @import 'base/buttons';
 @import 'base/animations';
 @import 'base/dropdowns';
+@import 'base/carrusel';
 // Theme Styles
 @import 'layouts/layouts';
 @import 'pages/pages';

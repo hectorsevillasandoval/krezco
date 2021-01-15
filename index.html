@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="assets/css/theme.css">
 
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -34,6 +36,208 @@
         </div>
     </header>
 
-</body>
 
+<!-- experiencia -->
+<section class="experiencia">
+    <div class="container">
+      <div class="title">A través de la tecnología te ayudamos <span>a que tu búsqueda sea una </span>experiencia facíl y dinámica</div>
+
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>  
+    </div>
+</section>
+<!-- experiencia -->
+
+<!-- Testimonial Carrusel-->
+<section class="testimonials-slider">
+    <div class="title">Testimoniales</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 mx-auto">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="assets/images/user_testimonial.png" alt="">
+                        </div>
+                        <div class="testimonial-content">                            
+                            <p class="description">“At auctor urna nunc id cursus metus aliquam eleifend. Sit amet dictum sit amet justo donec enim diam. Cursus sit amet dictum sit amet justo donec enim. Nibh venenatis cras sed felis eget velit aliquet sagittis id. Sed risus ultricies tristique null”</p>
+                            <h3 class="testimonial-title">Ana Martinez</h3>
+                        </div>
+                    </div>
+ 
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="assets/images/user_testimonial.png" alt="">
+                        </div>
+                        <div class="testimonial-content">                            
+                            <p class="description">“At auctor urna nunc id cursus metus aliquam eleifend. Sit amet dictum sit amet justo donec enim diam. Cursus sit amet dictum sit amet justo donec enim. Nibh venenatis cras sed felis eget velit aliquet sagittis id. Sed risus ultricies tristique null”</p>
+                            <h3 class="testimonial-title">Ana Martinez</h3>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+<script>
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        loop:true,
+        navigation:true,
+        navigationText: [
+           "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
+           "<i class='fa fa-chevron-right'></i>"
+        ],
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination: true,
+        slideSpeed:1000,
+        singleItem:true,
+        transitionStyle:"fadeUp",
+        autoPlay:true
+    });
+});
+</script>
+
+</section>
+<!-- Testimonial Carrusel-->
+
+<!-- ultimas publicaciones -->
+<section class="news">
+  <div class="container">
+    <div class="title">Últimas publicaciones</div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="assets/images/Blog-1.png">
+        <span>10 de Octubre, 2020</span>
+        <h2>Guía para preparar una Entrevista de Trabajo</h2>
+        <p>Prepara tu próxima entrevista, utiliza nuestra guía e informate de qué preguntas te pueden hacer y cómo responderlas, qué no debes decir, cómo explicar tus áreas a mejorar, qué preguntas puedes hacer, entre otros.</p>
+        <a href="#">Leer más</a>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="assets/images/Blog-2.png">
+        <span>09 de Octubre, 2020</span>
+        <h2>Lista de control de <span>diversidad e inclusión</span></h2>
+        <p>La diversidad y la inclusión se mencionan a menudo en la misma frase, porque una organización inclusiva no puede existir sin uan fuerza de trabajo diversa. Y una organización debe ser inclusiva a fin de mantener su personal diverso.</p>
+        <a href="#">Leer más</a>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="assets/images/Blog-3.png">
+        <span>12 de Octubre, 2020</span>
+        <h2>Diseña tu plan de carrera</h2>
+        <p>El plan de carrera es una estrategia empresarial para conseguir talento valioso para las compañias. Te damos a conocer los secretos de esta táctica para poder ponerla en práctica.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ultimas publicaciones -->
+
+<!-- footer -->
+<section class="footer">
+
+    <!-- footer bottom -->
+    <div class="footer-bottom">
+      <div class="container">  
+        <div class="row">
+
+          <div class="col social-media">
+            <div class="title">Krezco</div>
+                <ul>
+                    <li class="facebook">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>   
+                    <li class="twitter">              
+                      <a target="_blank" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="linkedin">              
+                      <a target="_blank" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="youtube">              
+                      <a target="_blank" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>            
+          </div>
+
+          <div class="col">
+            <div class="title">Conoce más</div>
+            <ul>
+                <li><a href="#">Encuentra Vacantes</a></li>
+                <li><a href="#">Impulsandome</a></li>
+                <li><a href="#">Compañias</a></li>
+                <li><a href="#">Misión</a></li>
+                <li><a href="#">Publica un trabajo</a></li>
+                <li><a href="#">Encuentra un candidato</a></li>
+                <li><a href="#">Cursos y capacitaciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+              <div class="title">Últimas publicaciones</div>
+                <div class="row mb-4">
+                  <div class="col-4 left-side">
+                    <img src="./assets/images/Blog-1.png" alt="Download Our Insurance Secrets FREE eBook">
+                  </div>
+                  <div class="col-8 right-side">
+                    <div class="sub-title"><span>10 octubre. 2020</span>
+                        Guia para preparar una Entrevista de trabajo                      
+                    </div>                                  
+                  </div>
+                </div>  
+                <div class="row">
+                  <div class="col-4 left-side">
+                    <img src="./assets/images/Blog-2.png" alt="Download Our Insurance Secrets FREE eBook">
+                  </div>
+                  <div class="col-8 right-side">
+                    <div class="sub-title"><span>9 octubre. 2020</span>
+                        Lista de control de <br />diversidad e inclusión                    
+                    </div>                                  
+                  </div>
+                </div>  
+          </div>
+          <div class="col cuidades">
+            <div class="title">Cuidades</div>
+            <ul>
+                <li><a href="#">Managua</a></li>
+                <li><a href="#">Masaya</a></li>
+                <li><a href="#">Granada</a></li>
+                <li><a href="#">Isla de Ometepe</a></li> 
+
+                <li><a href="#">Matagalpa</a></li>
+                <li><a href="#">Boaco</a></li>
+                <li><a href="#">Chinandega</a></li>
+                <li><a href="#">Estelí</a></li>
+                <li><a href="#">Rivas</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>  
+    </div>    
+    <!-- footer bottom -->
+
+    <!-- copyright footer -->
+    <div class="copyright-footer">
+      <p>© 2020 KREZCO. Todos los derechos reservados</p>
+    </div>
+    <!-- copyright footer -->
+
+</section>
+<!-- footer -->
+</body>
 </html>

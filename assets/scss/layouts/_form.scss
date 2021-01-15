@@ -74,10 +74,10 @@
                 }
             }
             &:valid {
-                border-color: green;
+                /*border-color: green;*/
                 &+span:before {
                     content: '\f00c';
-                    color: green;
+                    /*color: green;*/
                     font-family: $fontawesome;
                 }
             }
