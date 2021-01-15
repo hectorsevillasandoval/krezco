@@ -16292,7 +16292,7 @@ a {
 }
 
 .testimonials-slider {
-  padding-top: 50px;
+  padding-top: 150px;
 }
 .testimonials-slider .title {
   text-align: center;
@@ -17289,13 +17289,100 @@ a {
 }
 
 /* experiencia */
+.experiencia {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
 .experiencia .container .title {
   font-family: "Work Sans";
   font-weight: bold;
-  font-size: 43px;
   text-align: center;
   letter-spacing: 0px;
   color: #0A0A0A;
+  font-size: 38px;
+  line-height: 42px;
+  margin-bottom: 35px;
+}
+.experiencia .container .title span {
+  display: block;
+}
+.experiencia .container .row p {
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #616260;
+}
+
+/* Aliados */
+.aliados {
+  background: transparent linear-gradient(#3247c5 0%, #7124a3 125%) 0% 0% no-repeat padding-box;
+  position: relative;
+  padding-top: 50px;
+}
+.aliados:before {
+  /*content: url(../images/gear-wheel-bg.png);*/
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: initial;
+  bottom: initial;
+  line-height: 0;
+  transform: rotate(180deg);
+  opacity: 0.3;
+}
+.aliados:after {
+  /*content: url(../images/gear-wheel-bg.png);*/
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: initial;
+  top: initial;
+  line-height: 0;
+  opacity: 0.3;
+}
+.aliados .container .title {
+  font-family: "Work Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: white;
+  font-weight: 600;
+}
+.aliados .container .row #owl-aliados {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 50px #0000001A;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  top: 80px;
+}
+.aliados .container .row #owl-aliados .owl-item {
+  text-align: center !important;
+}
+.aliados .container .row #owl-aliados .owl-controls {
+  margin-top: 0px;
+}
+.aliados .container .row #owl-aliados .owl-controls .owl-buttons {
+  position: relative;
+  top: -60px;
+}
+.aliados .container .row #owl-aliados .owl-controls .owl-buttons .owl-prev {
+  border: 2px solid #E3E4E9 !important;
+  position: absolute;
+  left: 0px;
+}
+.aliados .container .row #owl-aliados .owl-controls .owl-buttons .owl-prev .fa {
+  color: #616260;
+}
+.aliados .container .row #owl-aliados .owl-controls .owl-buttons .owl-next {
+  border: 2px solid #E3E4E9 !important;
+  position: absolute;
+  right: 0px;
+}
+.aliados .container .row #owl-aliados .owl-controls .owl-buttons .owl-next .fa {
+  color: #616260;
 }
 
 /* News */

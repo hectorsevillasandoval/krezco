@@ -40,15 +40,84 @@
 <!-- experiencia -->
 <section class="experiencia">
     <div class="container">
-      <div class="title">A través de la tecnología te ayudamos <span>a que tu búsqueda sea una </span>experiencia facíl y dinámica</div>
+      <div class="title">A través de la tecnología te ayudamos <span>a que tu búsqueda sea una experiencia </span>facíl y dinámica</div>
 
       <div class="row">
+
         <div class="col">
+          <img src="assets/images/02-icono-un-clic.svg">
+          <p>Aplica a una vacante con un solo clic.</p>
         </div>
+
+        <div class="col">
+          <img src="assets/images/02-iconos-etaoas-de-proceso.svg">
+          <p>Sigue de cerca todas las etapas de tu proceso de selección.</p>
+        </div>
+
+        <div class="col">
+          <img src="assets/images/02-icono-comunicate.svg">
+          <p>Comunicate directamente con las empresas y centros de formación.</p>
+        </div>
+
+        <div class="col">
+          <img src="assets/images/02-icono-programa-insignias.svg">
+          <p>Forma parte del programa de insignias.</p>
+        </div>
+
+        <div class="col">
+          <img src="assets/images/02-icono-recomendaciones.svg">
+          <p>Solicita y recibe recomendaciones para tus aplicaciones.</p>
+        </div>
+
       </div>  
     </div>
 </section>
 <!-- experiencia -->
+
+<!-- aliados -->
+<section class="aliados">
+  <div class="container">
+    <div class="title">Nuestros Aliados</div>
+      <div class="row">
+        <div id="owl-aliados">
+          
+          <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
+          <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
+         
+        </div>
+      </div>  
+  </div> 
+</section>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-aliados").owlCarousel({
+ 
+      autoPlay: 3000, 
+      navigation : true,
+      pagination: false,
+      loop:true,
+      navigationText: [
+           "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
+           "<i class='fa fa-chevron-right'></i>"
+      ],
+      items : 5,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+</script>
+<!-- aliados -->
 
 <!-- Testimonial Carrusel-->
 <section class="testimonials-slider">
