@@ -1,0 +1,6 @@
+.header {
+    @media #{$tablet} {
+        position: absolute;
+        width: 100%;
+    }
+}

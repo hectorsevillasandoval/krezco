@@ -1,0 +1,71 @@
+.hero {
+    min-height: 800px;
+    background-color: $purple;
+    margin-bottom: 100px;
+    &__wrapper {
+        margin-top: 120px;
+        margin-bottom: 0 !important;
+    }
+    &__item {
+        &Wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media #{$tablet} {
+                flex-direction: row;
+            }
+        }
+    }
+    &__left {
+        @media #{$tablet} {
+            width: 50%;
+        }
+    }
+    &__right {
+        @media #{$tablet} {
+            width: 50%;
+        }
+    }
+    &__image {
+        @media #{$desktop} {
+            height: 680px;
+            width: 510px;
+            margin-left: auto;
+            background-color: $red;
+        }
+    }
+    &__title {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $worksans;
+        @media #{$tablet} {
+            font-size: 60px;
+        }
+        @media #{$desktop-large} {
+            font-size: 76px;
+        }
+    }
+    &__content {
+        color: white;
+        font-family: $poppins;
+        font-size: 19px;
+        line-height: 40px;
+        @media #{$desktop} {
+            font-size: 21px;
+        }
+    }
+    .slick-dots {
+        bottom: 170px;
+    }
+    .slick-active {
+        .hero__left {
+            animation-name: fadeInUpSD;
+            animation-duration: 1s;
+            opacity: 1;
+            width: 100%;
+            padding: 10px 20px 30px 0;
+        }
+    }
+}
