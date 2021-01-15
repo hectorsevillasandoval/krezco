@@ -5,7 +5,6 @@
 }
 
 .header {
-    background-color: $purple-link;
     padding-top: 20px;
     padding-bottom: 20px;
     &__menu {
@@ -50,7 +49,10 @@
         }
     }
 }
+
+
 /* experiencia */
+
 .experiencia {
    padding-top:40px; 
    padding-bottom: 80px; 
@@ -154,15 +156,28 @@
         }
     }
 }
+.container {
+     .title {
+         font-family: $worksans;
+          font-weight: bold;
+            font-size: 43px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #0A0A0A;
+        
+    }
+}
+
 /* News */
+
 .news {
     padding-top: 80px;
-    padding-bottom:80px;
+    padding-bottom: 80px;
     .title {
         text-align: center;
         letter-spacing: 0px;
         color: #0A0A0A;
-        opacity: 1;    
+        opacity: 1;
         font-size: 40px;
         padding-bottom: 40px;
         font-weight: 600;
@@ -210,7 +225,7 @@
                 opacity: 1;
                 font-size: 16px;
                 font-weight: 300;
-                line-height: 25px;  
+                line-height: 25px;
                 padding-right: 30px;
             }
             a {
@@ -218,9 +233,9 @@
                 letter-spacing: 0px;
                 color: #264ECC;
                 font-family: $poppins;
-                font-size: 18px;                
+                font-size: 18px;
                 &:after {
-                    font-family: $fontawesome;                   
+                    font-family: $fontawesome;
                     font-weight: 900;
                     content: "\f30b";
                     margin-left: 8px;
