@@ -1,5 +1,5 @@
 //customSelect('select');
-$(document).ready(function() {
+$(window).load(function() {
     $("#testimonial-slider").owlCarousel({
         items: 1,
         loop: true,
@@ -28,20 +28,22 @@ $(document).ready(function() {
         autoplayspeed: 3000
     });
 
-      $("#owl-aliados").owlCarousel({
- 
-      autoPlay: 3000, 
-      navigation : true,
-      pagination: false,
-      loop:true,
-      navigationText: [
-           "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-           "<i class='fa fa-chevron-right'></i>"
-      ],
-      items : 5,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-      
+    $("#owl-aliados").owlCarousel({
+
+        autoPlay: 3000,
+        navigation: true,
+        pagination: false,
+        loop: true,
+        navigationText: [
+            "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
+            "<i class='fa fa-chevron-right'></i>"
+        ],
+        items: 5,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3]
+
+    });
+
+    $('.dropdown-toggle').dropdown();
+
 });

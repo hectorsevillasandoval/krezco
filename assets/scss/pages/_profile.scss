@@ -1,0 +1,161 @@
+.profile {
+    background-color: #F5F5F5;
+    .header {
+        background-color: white;
+        border: 1px solid #DBDBDB;
+        position: initial;
+    }
+    &__header {
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0px 3px 6px #0000000A;
+        max-width: 1414px;
+        margin: 50px auto;
+        padding-bottom: 25px;
+        overflow: hidden;
+        &-content {
+            height: 440px;
+        }
+        .profile {
+            &__row {
+                max-width: 1355px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 42px;
+                .row-title {
+                    text-align: left;
+                    font: normal normal 600 18px/27px Poppins;
+                    letter-spacing: 0px;
+                    color: #646464;
+                    margin-bottom: 21px;
+                }
+            }
+            &__badge {
+                width: 400px;
+                border: 1px solid #D5D5D5;
+                border-radius: 30px;
+                padding: 28px 41px;
+            }
+            &__about {
+                width: 920px;
+                border: 1px solid #D5D5D5;
+                border-radius: 30px;
+                padding: 28px 41px;
+                p {
+                    text-align: left;
+                    font: normal normal normal 16px/25px Poppins;
+                    letter-spacing: 0px;
+                    color: #646464;
+                }
+            }
+            &__photo {
+                margin-top: -80px;
+                z-index: 99;
+                position: relative;
+            }
+            &__details {
+                padding-left: 46px;
+                padding-top: 16px;
+            }
+            &__info {
+                display: flex;
+            }
+            &__name {
+                text-align: left;
+                font: normal normal normal 22px/33px $poppins;
+                letter-spacing: 0px;
+                color: #3D3D3D;
+                margin-bottom: 0;
+            }
+            &__position {
+                text-align: left;
+                font: normal normal normal 18px/27px $poppins;
+                letter-spacing: 0px;
+                color: #888888;
+            }
+            &__list {
+                ul {
+                    padding: 0;
+                    list-style: none;
+                }
+                li {
+                    color: #888888;
+                    font: normal normal normal 14px/21px $poppins;
+                }
+                span {
+                    color: #3E3E3E;
+                }
+            }
+        }
+    }
+    &__cover-photo {
+        height: 251px;
+        background-color: #E8E8E8;
+        position: relative;
+        &.no-cover-image {
+            &:before {
+                content: "";
+                height: 120px;
+                width: 227px;
+                display: block;
+                background-image: url(../images/image-regular.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .btn {
+            position: absolute;
+            bottom: 22px;
+            right: 20px;
+        }
+    }
+    .dropdown {
+        outline: none;
+        &__profile {
+            button {
+                width: 61px;
+                height: 61px;
+                margin-left: auto;
+                line-height: 58px;
+                border: 2px solid #DCDCDC;
+                background-color: transparent;
+                padding: 0;
+                border-radius: 50%;
+                img {
+                    width: 58px;
+                    height: 58px;
+                    vertical-align: top;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            .dropdown-menu {
+                padding-left: 17px;
+                padding-right: 17px;
+                width: 258px;
+            }
+            .dropdown-item {
+                color: #959595;
+                font-size: 14px;
+                border-bottom: 1px solid #DBDBDB;
+                padding: 18px 0;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                &:hover,
+                &:focus {
+                    color: #9100FF;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
