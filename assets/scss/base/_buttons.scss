@@ -26,4 +26,17 @@
             content: fa-content($fa-var-user);
         }
     }
+    &--white {
+        background-color: #fff;
+        border-radius: 27px;
+        width: 208px;
+        color: #B9B9B9;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        &:hover,
+        &:focus {
+            color: $purple;
+        }
+    }
 }

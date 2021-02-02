@@ -27,3 +27,35 @@ a {
         color: white;
     }
 }
+
+.list {
+    &--icons {
+        li {
+            text-align: center;
+            position: relative;
+            span {
+                display: block;
+            }
+        }
+        a {
+            font-size: 17px;
+            color: $text2;
+            padding-top: 30px;
+            display: block;
+            &:hover,
+            &:focus {
+                color: $text3;
+            }
+        }
+        img,
+        i {
+            display: inline-block;
+            margin-bottom: 15px;
+            line-height: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

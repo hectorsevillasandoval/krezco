@@ -7,6 +7,17 @@
 .header {
     padding-top: 20px;
     padding-bottom: 20px;
+    &__logo {
+        &--color {
+            .temp-logo {
+                color: $blue-link !important;
+                font-size: 41px !important;
+                span {
+                    color: $purple;
+                }
+            }
+        }
+    }
     &__menu {
         ul {
             list-style: none;
@@ -54,39 +65,41 @@
 /* experiencia */
 
 .experiencia {
-   padding-top:40px; 
-   padding-bottom: 80px; 
-   .container {
-    .title {
-        font-family: $worksans;
-        font-weight: bold;         
-        text-align: center;
-        letter-spacing: 0px;
-        color: #0A0A0A;
-        font-size: 38px;
-        line-height: 42px;
-        margin-bottom: 35px;
-        span {
-            display: block;
-        }
-     }
-     .row {
-        p {
-            font-family: $poppins;
-            font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .container {
+        .title {
+            font-family: $worksans;
+            font-weight: bold;
             text-align: center;
             letter-spacing: 0px;
-            color: #616260;
+            color: #0A0A0A;
+            font-size: 38px;
+            line-height: 42px;
+            margin-bottom: 35px;
+            span {
+                display: block;
+            }
         }
-     }
-   }
+        .row {
+            p {
+                font-family: $poppins;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0px;
+                color: #616260;
+            }
+        }
+    }
 }
 
+
 /* Aliados */
+
 .aliados {
- background: transparent linear-gradient(#3247c5 0%, #7124a3 125%) 0% 0% no-repeat padding-box;       
- position:relative;
- padding-top: 50px;
+    background: transparent linear-gradient(#3247c5 0%, #7124a3 125%) 0% 0% no-repeat padding-box;
+    position: relative;
+    padding-top: 50px;
     &:before {
         /*content: url(../images/gear-wheel-bg.png);*/
         top: 0;
@@ -116,7 +129,7 @@
             text-align: center;
             letter-spacing: 0px;
             color: white;
-            font-weight: 600;            
+            font-weight: 600;
         }
         .row {
             #owl-aliados {
@@ -130,25 +143,25 @@
                     text-align: center !important;
                 }
                 .owl-controls {
-                  margin-top:0px;
-                   .owl-buttons {
-                      position: relative;
-                      top: -60px;
+                    margin-top: 0px;
+                    .owl-buttons {
+                        position: relative;
+                        top: -60px;
                         .owl-prev {
                             border: 2px solid #E3E4E9 !important;
                             position: absolute;
-                            left: 0px;  
+                            left: 0px;
                             .fa {
                                 color: #616260;
-                            }              
+                            }
                         }
                         .owl-next {
                             border: 2px solid #E3E4E9 !important;
                             position: absolute;
-                            right: 0px;  
+                            right: 0px;
                             .fa {
                                 color: #616260;
-                            }              
+                            }
                         }
                     }
                 }
@@ -156,17 +169,18 @@
         }
     }
 }
+
 .container {
-     .title {
-         font-family: $worksans;
-          font-weight: bold;
-            font-size: 43px;
-            text-align: center;
-            letter-spacing: 0px;
-            color: #0A0A0A;
-        
+    .title {
+        font-family: $worksans;
+        font-weight: bold;
+        font-size: 43px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #0A0A0A;
     }
 }
+
 
 /* News */
 
