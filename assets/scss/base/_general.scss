@@ -12,6 +12,12 @@ a {
     font: normal normal normal 12px/18px $worksans;
 }
 
+.edit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .link-color {
     &--purple {
         color: $purple-link;
