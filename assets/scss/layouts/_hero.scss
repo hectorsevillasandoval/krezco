@@ -45,6 +45,12 @@
             margin-left: auto;
             //background-color: $red;
         }
+        &.empresas {
+            img {
+                top: 50%;
+                Transform: translateY(-50%);
+            }
+        }
     }
     &__title {
         color: white;

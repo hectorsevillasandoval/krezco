@@ -1,0 +1,27 @@
+.comunidad {
+	&.empresa {	
+		&:before {
+			display: none;
+		}
+		.container {
+		.mt-5 {
+			margin-top: 60px !important;
+			}
+			.kr-box {
+				.wrapper {
+					padding-top: 50px;
+					height: 325px;
+    				overflow: hidden;
+				}
+			}
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+.aliados {
+	&.empresa {
+		margin-bottom: 80px;
+	}
+}

@@ -61,6 +61,25 @@
     }
 }
 
+/* socios */
+
+.socios {
+  padding-bottom: 40px;
+  .container {
+      .row {
+        align-items: center;
+         .col {
+            &:first-child {
+                border:0px;
+            }
+            border-left: 1px solid #eaeaea;
+            .title {
+               font-size: 16px;
+            }
+         }         
+      }
+   }
+}
 
 /* experiencia */
 
@@ -73,16 +92,17 @@
             font-weight: bold;
             text-align: center;
             letter-spacing: 0px;
-            color: #0A0A0A;
+            color: $black;
             font-size: 38px;
             line-height: 42px;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
             span {
                 display: block;
             }
         }
         .row {
             p {
+                margin-top: 20px;
                 font-family: $poppins;
                 font-size: 16px;
                 text-align: center;
@@ -93,7 +113,132 @@
     }
 }
 
+/* Comunidad */
+.comunidad {
+    &:before {
+     content: url(../images/box-side-points.svg);
+     position: absolute;
+     bottom: 0px;
+     left: 0px;    
+    }
+    position:relative;
+    padding-top:20px; 
+    padding-bottom:60px; 
+    .container {
+        .title {
+            font-family: $worksans;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: $black;
+            span {
+                display: block;
+            }
+        }
+        .sub-title {
+            text-align: center;
+            color: #616260;
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 22px;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            span {
+                display: block;
+            }
+        }
+        .kr-box {
+            margin-bottom: 40px;
+            .wrapper {
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 50px #0000001A;
+            border-radius: 35px;            
+            padding: 20px;
+            text-align: center;
+            height: 325px;
+            overflow: hidden;
+            h3 {
+                margin-top: 20px;
+                font-family: $worksans;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 0px;
+                color: $black;
+                span {
+                    display: block;
+                }
+            }
+            p {
+                margin-top: 10px;
+              }  
+           }
+        }
+    }
+    &:after {
+     content: url(../images/box-side-points.svg);
+     position: absolute;
+     bottom: 0px;
+     right: 0px;          
+    }
+}
 
+.mision {
+    margin-top: 150px;
+    padding-top:40px;
+    padding-bottom:40px;
+    position:relative;
+    .container {
+    position:relative;
+        &:before {
+          content: url(../images/mision-img.png);
+          display: block;          
+          position: absolute;
+          bottom:0px;
+          transform: scale(0.8)
+    }
+    .bg-box {
+        background: transparent linear-gradient(221deg, #F6FAFF 30%, #EDD5FF 100%) 0% 0% no-repeat padding-box;
+        border-radius: 80px;
+        .content {
+            padding-top:60px;
+            padding-right: 85px;
+            padding-bottom:100px;
+            .title {
+                margin-top: 20px;
+                font-family: $worksans;
+                font-size: 43px;
+                font-weight: bold;
+                text-align: left;
+                letter-spacing: 0px;
+                color: $black;
+                padding-bottom: 10px;
+            }
+            p {
+                color: #616260;
+                font-family: $poppins;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 27px;
+            }
+            blockquote {                
+                font-family: $worksans;
+                font-size: 20px;   
+                line-height: 30px;             
+                color: #636363;
+                font-weight: normal;
+                border-left: 2px solid #7821A0;
+                padding-left: 35px;
+                span {
+                    display: block;
+                    }
+                }
+            }
+        }
+    }
+}
 /* Aliados */
 
 .aliados {
