@@ -28,6 +28,13 @@ a {
     }
 }
 
+.edit-button {
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/pen-button.png);
+    display: block;
+}
+
 .text-color {
     &--white {
         color: white;
