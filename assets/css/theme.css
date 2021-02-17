@@ -18015,8 +18015,11 @@ a {
 
 /* experiencia */
 .experiencia {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 80px;
+  background: #fff;
+  z-index: 9;
+  position: relative;
 }
 .experiencia .container .title {
   font-family: "Work Sans";
@@ -18113,22 +18116,11 @@ a {
 .mision {
   margin-top: 150px;
   padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-}
-.mision .container {
-  position: relative;
-}
-.mision .container:before {
-  content: url(../images/mision-img.png);
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  transform: scale(0.8);
 }
 .mision .container .bg-box {
   background: transparent linear-gradient(221deg, #F6FAFF 30%, #EDD5FF 100%) 0% 0% no-repeat padding-box;
   border-radius: 80px;
+  position: relative;
 }
 .mision .container .bg-box .content {
   padding-top: 60px;
@@ -18163,6 +18155,13 @@ a {
 }
 .mision .container .bg-box .content blockquote span {
   display: block;
+}
+.mision .container .bg-box:after {
+  content: url(../images/mision-img.png);
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 30px;
 }
 
 /* Aliados */
@@ -18342,6 +18341,168 @@ a {
   margin-bottom: 80px;
 }
 
+.experiencia.empresa {
+  padding-top: 0px;
+}
+.experiencia.empresa .container .title {
+  margin-bottom: 60px;
+}
+
+.casos-estudios {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.casos-estudios .container .title {
+  padding-bottom: 70px;
+}
+.casos-estudios .container .testimonials {
+  /*border-left: 3px solid #6ab33e;
+  padding: 100px 0 100px 275px;*/
+  display: flex;
+  /*background: url(../images/bg-testimonial.png);*/
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.casos-estudios .container .testimonials:before {
+  /* content: "";
+   width: 320px;
+   height: 55px;
+   border-right: 3px solid #6ab33e;
+   position: absolute;
+   left: 0;
+   border-top: 3px solid #6ab33e;
+   top: 0;*/
+}
+.casos-estudios .container .testimonials .testimonial-content {
+  flex: 65%;
+  width: 65%;
+  background: transparent linear-gradient(58deg, #7721A0 0%, #264ECC 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 50px #0000001A;
+  border-radius: 35px;
+  padding: 45px;
+}
+.casos-estudios .container .testimonials .testimonial-content img {
+  margin-bottom: 25px;
+}
+.casos-estudios .container .testimonials .pic {
+  flex: 35%;
+  width: 35%;
+}
+.casos-estudios .container .testimonials .pic img {
+  width: 100%;
+  height: auto;
+  /*opacity: 0;*/
+  transform: scale(1.1);
+  border-radius: 12%;
+  position: relative;
+  right: 24px;
+}
+.casos-estudios .container .testimonials .description {
+  position: relative;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.casos-estudios .container .testimonials .description:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  color: #fff;
+}
+.casos-estudios .container .testimonials .description p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  font-family: "Work Sans";
+}
+.casos-estudios .container .testimonials .testimonial-title {
+  font-size: 18px;
+  font-family: "Work Sans";
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 12px;
+}
+.casos-estudios .container .testimonials .post {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #6ab33e;
+  margin-top: 10px;
+}
+.casos-estudios .container .testimonials:after {
+  /*content: "";
+  width: 320px;
+  height: 55px;
+  border-right: 3px solid #6ab33e;
+  position: absolute;
+  left: 0;
+  border-bottom: 3px solid #6ab33e;
+  bottom: 0;*/
+}
+.casos-estudios .container .owl-theme .owl-controls {
+  text-align: left;
+  margin-top: 30px;
+}
+.casos-estudios .container .owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  border-radius: 0;
+  opacity: 1;
+  padding: 5px 10px;
+  border: 1px solid #7821A0;
+  border-radius: 100%;
+}
+.casos-estudios .container .owl-theme .owl-controls .owl-buttons .owl-prev:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #7821A0;
+}
+.casos-estudios .container .owl-theme .owl-controls .owl-buttons .owl-next:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #7821A0;
+  content: "";
+}
+
+@media only screen and (max-width: 990px) {
+  .testimonials {
+    padding: 80px 0 80px 265px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .testimonials {
+    padding: 0;
+    border: none;
+  }
+
+  .testimonials:before,
+.testimonials:after {
+    border: none;
+  }
+
+  .testimonials .pic {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .testimonials .description {
+    margin-top: 15px;
+  }
+
+  .testimonials .description:before {
+    content: "";
+  }
+}
 .profile {
   background-color: #F5F5F5;
 }

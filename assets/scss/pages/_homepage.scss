@@ -84,8 +84,11 @@
 /* experiencia */
 
 .experiencia {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
+    background: $white;
+    z-index: 9;
+    position: relative;
     .container {
         .title {
             font-family: $worksans;
@@ -187,21 +190,13 @@
 
 .mision {
     margin-top: 150px;
-    padding-top:40px;
-    padding-bottom:40px;
-    position:relative;
-    .container {
-    position:relative;
-        &:before {
-          content: url(../images/mision-img.png);
-          display: block;          
-          position: absolute;
-          bottom:0px;
-          transform: scale(0.8)
-    }
+    padding-top:40px;    
+    .container {        
+
     .bg-box {
         background: transparent linear-gradient(221deg, #F6FAFF 30%, #EDD5FF 100%) 0% 0% no-repeat padding-box;
         border-radius: 80px;
+        position:relative;
         .content {
             padding-top:60px;
             padding-right: 85px;
@@ -235,6 +230,13 @@
                     display: block;
                     }
                 }
+            }
+            &:after {
+                content: url(../images/mision-img.png);
+                display: block;          
+                position: absolute;
+                bottom:-6px;        
+                left: 30px;
             }
         }
     }
