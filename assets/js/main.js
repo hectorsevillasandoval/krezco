@@ -58,6 +58,15 @@ $(window).load(function() {
 
     });
 
-    $('.dropdown-toggle').dropdown();
 
+
+    //$('.dropdown-toggle').dropdown();
+    //$('.collapse').collapse({});
+
+});
+
+window.addEventListener('click', ev => {
+    if (ev.target.matches('.edit-button')) {
+        ev.preventDefault();
+    }
 });

@@ -241,6 +241,70 @@
             }
         }
     }
+    .testimonial {
+        border: 1px solid #D5D5D5;
+        border-radius: 30px;
+        padding: 28px 64px 50px 92px;
+        position: relative;
+        margin-bottom: 46px;
+        &__author {
+            font: normal normal 600 18px/27px $poppins;
+            color: #646464;
+            border-bottom: 1px solid rgba(136, 136, 136, 0.43);
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            position: relative;
+            &-photo {
+                position: absolute;
+                top: 0;
+                left: -70px;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span {
+                font: normal normal normal 14px/21px $poppins;
+                color: #888888;
+                padding-left: 7px;
+            }
+        }
+        &__content {
+            strong {
+                font: normal normal 600 18px/27px $poppins;
+                letter-spacing: 0px;
+                color: #3D3D3D;
+                margin-bottom: 7px;
+            }
+            p {
+                font: normal normal normal 16px/25px $poppins;
+                letter-spacing: 0px;
+                color: #646464;
+            }
+        }
+        &__button {
+            position: absolute;
+            width: 355px;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            .btn {
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 27px;
+            }
+        }
+        &__footer {
+            border-top: 1px solid #D5D5D5;
+            padding-top: 20px;
+            .view-more {
+                text-align: center;
+                color: $purple;
+                font-size: 14px;
+                display: block;
+            }
+        }
+    }
 }
 
 .body-profile {
@@ -250,7 +314,7 @@
             background: #fff;
             border-radius: 30px;
             box-shadow: 0px 3px 6px #0000000a;
-            padding: 30px;
+            padding: 48px 44px;
             margin-bottom: 50px;
             &.left-col {
                 position: relative;
@@ -271,18 +335,68 @@
                     }
                     img {
                         position: absolute;
-                        right: 0px;
-                        top: 0px;
+                        right: 18px;
+                        top: 10px;
+                    }
+                }
+                .tags-cloud {
+                    &__wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .tag {
+                            background-color: #E8E8E8;
+                            border-radius: 10px;
+                            font: normal normal normal 16px/25px $poppins;
+                            color: #888888;
+                            padding: 18px 25px;
+                            margin-bottom: 15px;
+                            margin-right: 15px;
+                            &:nth-child( 4n + 4) {
+                                margin-right: 0;
+                            }
+                        }
                     }
                 }
                 .company {
                     margin-top: 10px;
                     margin-bottom: 10px;
-                    display: flex;
-                    align-items: center;
                     padding-bottom: 35px;
                     border-bottom: 1px solid #bdbdbd;
                     margin-bottom: 35px;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                    &__wrapper {
+                        display: flex;
+                        align-items: center;
+                    }
+                    &__bio {
+                        font-size: 14px;
+                        color: #646464;
+                        padding: 15px 15px 0 15px;
+                    }
+                    .toolset {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        .edit-button {
+                            margin-left: auto;
+                            margin-bottom: 10px;
+                        }
+                        .view-more {
+                            background-color: transparent;
+                            border: 0;
+                            color: #979797;
+                            font-size: 12px;
+                            outline: initial;
+                            &:hover,
+                            &:focus {
+                                color: $purple;
+                            }
+                        }
+                    }
                     .logo {
                         padding-right: 30px;
                     }
@@ -351,8 +465,8 @@
                     }
                     img {
                         position: absolute;
-                        right: 0px;
-                        top: 0px;
+                        right: 18px;
+                        top: 10px;
                     }
                 }
                 .blog-post {
