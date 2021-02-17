@@ -241,6 +241,70 @@
             }
         }
     }
+    .testimonial {
+        border: 1px solid #D5D5D5;
+        border-radius: 30px;
+        padding: 28px 64px 50px 92px;
+        position: relative;
+        margin-bottom: 46px;
+        &__author {
+            font: normal normal 600 18px/27px $poppins;
+            color: #646464;
+            border-bottom: 1px solid rgba(136, 136, 136, 0.43);
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            position: relative;
+            &-photo {
+                position: absolute;
+                top: 0;
+                left: -70px;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span {
+                font: normal normal normal 14px/21px $poppins;
+                color: #888888;
+                padding-left: 7px;
+            }
+        }
+        &__content {
+            strong {
+                font: normal normal 600 18px/27px $poppins;
+                letter-spacing: 0px;
+                color: #3D3D3D;
+                margin-bottom: 7px;
+            }
+            p {
+                font: normal normal normal 16px/25px $poppins;
+                letter-spacing: 0px;
+                color: #646464;
+            }
+        }
+        &__button {
+            position: absolute;
+            width: 355px;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            .btn {
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 27px;
+            }
+        }
+        &__footer {
+            border-top: 1px solid #D5D5D5;
+            padding-top: 20px;
+            .view-more {
+                text-align: center;
+                color: $purple;
+                font-size: 14px;
+                display: block;
+            }
+        }
+    }
 }
 
 .body-profile {

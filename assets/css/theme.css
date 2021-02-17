@@ -18892,6 +18892,68 @@ a {
   color: #9100FF;
   background-color: transparent;
 }
+.profile .testimonial {
+  border: 1px solid #D5D5D5;
+  border-radius: 30px;
+  padding: 28px 64px 50px 92px;
+  position: relative;
+  margin-bottom: 46px;
+}
+.profile .testimonial__author {
+  font: normal normal 600 18px/27px "Poppins";
+  color: #646464;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.43);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.profile .testimonial__author-photo {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile .testimonial__author span {
+  font: normal normal normal 14px/21px "Poppins";
+  color: #888888;
+  padding-left: 7px;
+}
+.profile .testimonial__content strong {
+  font: normal normal 600 18px/27px "Poppins";
+  letter-spacing: 0px;
+  color: #3D3D3D;
+  margin-bottom: 7px;
+}
+.profile .testimonial__content p {
+  font: normal normal normal 16px/25px "Poppins";
+  letter-spacing: 0px;
+  color: #646464;
+}
+.profile .testimonial__button {
+  position: absolute;
+  width: 355px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile .testimonial__button .btn {
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 27px;
+}
+.profile .testimonial__footer {
+  border-top: 1px solid #D5D5D5;
+  padding-top: 20px;
+}
+.profile .testimonial__footer .view-more {
+  text-align: center;
+  color: #5A0D7E;
+  font-size: 14px;
+  display: block;
+}
 
 .body-profile .container {
   max-width: 1420px;
