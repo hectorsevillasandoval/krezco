@@ -19115,6 +19115,72 @@ a {
   font-size: 14px;
   display: block;
 }
+.profile .group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile .group__icon {
+  text-align: center;
+  width: 115px;
+  margin-bottom: 15px;
+}
+.profile .group__icon--image {
+  border-radius: 20px;
+  display: block;
+  max-width: 109px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+}
+.profile .group__icon--add button {
+  border: 0;
+  height: 107px;
+  width: 107px;
+  background-color: #E5E5E5;
+  border-radius: 20px;
+}
+.profile .group__icon--add button img {
+  height: initial;
+  width: initial;
+}
+.profile .group__name {
+  display: block;
+  font-family: "Poppins";
+  font-size: 11px;
+  color: #373737;
+  margin-top: 11px;
+}
+.profile .tags-cloud__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile .tags-cloud__wrapper .tag {
+  background-color: #E8E8E8;
+  border-radius: 10px;
+  font: normal normal normal 16px/25px "Poppins";
+  color: #888888;
+  padding: 18px 25px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+.profile .tags-cloud__wrapper .tag:nth-child(4n+4) {
+  margin-right: 0;
+}
+.profile .tags-cloud__wrapper .tag--close {
+  padding-right: 40px;
+}
+.profile .tags-cloud__wrapper .tag--close:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  right: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .body-profile .container {
   max-width: 1420px;
@@ -19149,22 +19215,6 @@ a {
   position: absolute;
   right: 18px;
   top: 10px;
-}
-.body-profile .container .box.left-col .tags-cloud__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-.body-profile .container .box.left-col .tags-cloud__wrapper .tag {
-  background-color: #E8E8E8;
-  border-radius: 10px;
-  font: normal normal normal 16px/25px "Poppins";
-  color: #888888;
-  padding: 18px 25px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-}
-.body-profile .container .box.left-col .tags-cloud__wrapper .tag:nth-child(4n+4) {
-  margin-right: 0;
 }
 .body-profile .container .box.left-col .company {
   margin-top: 10px;
