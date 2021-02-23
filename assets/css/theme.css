@@ -20778,7 +20778,17 @@ a {
   border-radius: 30px;
   padding: 30px 35px;
   margin-top: 40px;
-  margin-bottom: 40px;
+}
+.vacantes .bordered-box__header {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-bottom: 1px solid #D5D5D5;
+}
+.vacantes .bordered-box__header-title {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 600;
 }
 .vacantes .job-header__top {
   display: flex;
@@ -20916,6 +20926,31 @@ a {
 }
 .vacantes .job-header__bottom-right {
   width: 50%;
+}
+.vacantes .vacancy__sidebar-content {
+  padding-bottom: 30px;
+}
+.vacantes .vacancy__sidebar-content ul {
+  list-style: none;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #D5D5D5;
+}
+.vacantes .vacancy__sidebar-content li {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.vacantes .vacancy__sidebar-content li strong {
+  font-weight: 600;
+}
+.vacantes .vacancy__sidebar-content .btn {
+  border-radius: 27px;
+  font-weight: normal;
+  border: 0;
+  font-size: 14px;
+  width: 171px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=theme.css.map */
