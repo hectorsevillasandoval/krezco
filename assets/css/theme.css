@@ -16994,6 +16994,207 @@ a {
   font: normal normal normal 12px/18px "Work Sans";
 }
 
+.backend__header {
+  background-color: white;
+  box-shadow: 0px 3px 6px #0000000A;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.backend__header-content {
+  height: 440px;
+}
+.backend__header .profile__row {
+  max-width: 1355px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+.backend__header .profile__row .row-title {
+  text-align: left;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #646464;
+  margin-bottom: 21px;
+}
+.backend__header .profile__badge {
+  width: 400px;
+  border: 1px solid #D5D5D5;
+  border-radius: 30px;
+  padding: 28px 41px;
+  position: relative;
+}
+.backend__header .profile__badge-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.backend__header .profile__badge-list span {
+  width: 51px;
+  height: 64px;
+  background-image: url(../images/badge.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+.backend__header .profile__badge-list span:nth-child(4n+4) {
+  margin-right: 0;
+}
+.backend__header .profile__badge-footer {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 20px;
+  text-align: right;
+}
+.backend__header .profile__badge-footer a {
+  color: #979797;
+  font-size: 14px;
+}
+.backend__header .profile__badge-footer a:hover, .backend__header .profile__badge-footer a:focus {
+  color: #5A0D7E;
+}
+.backend__header .profile__badge-footer a i {
+  color: #5A0D7E;
+}
+.backend__header .profile__about {
+  width: 920px;
+  border: 1px solid #D5D5D5;
+  border-radius: 30px;
+  padding: 20px 41px;
+  position: relative;
+}
+.backend__header .profile__about p {
+  text-align: left;
+  font: normal normal normal 16px/25px Poppins;
+  letter-spacing: 0px;
+  color: #646464;
+}
+.backend__header .profile__photo {
+  margin-top: -80px;
+  z-index: 99;
+  position: relative;
+}
+.backend__header .profile__details {
+  padding-left: 46px;
+  padding-top: 16px;
+  position: relative;
+}
+.backend__header .profile__details .icon-tools {
+  position: absolute;
+  right: -50px;
+  top: 16px;
+}
+.backend__header .profile__details .icon-tools a {
+  display: block;
+}
+.backend__header .profile__info {
+  display: flex;
+}
+.backend__header .profile__social {
+  padding-top: 16px;
+  display: flex;
+}
+.backend__header .profile__social__contacts {
+  color: #5D5D5D;
+  font-size: 18px;
+  padding-top: 1px;
+}
+.backend__header .profile__social__contacts a {
+  color: #5A0D7E;
+}
+.backend__header .profile__social__links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 24px;
+}
+.backend__header .profile__social__links li {
+  margin-right: 20px;
+}
+.backend__header .profile__social__links li:last-child {
+  margin-right: 0;
+}
+.backend__header .profile__social__links a {
+  transition: transform ease-in 0.3s;
+}
+.backend__header .profile__social__links a:hover {
+  transform: scale(1.1);
+}
+.backend__header .profile__social__links i {
+  color: #CBCBCB;
+  font-size: 28px;
+}
+.backend__header .profile__name {
+  text-align: left;
+  font: normal normal normal 22px/33px "Poppins";
+  letter-spacing: 0px;
+  color: #3D3D3D;
+  margin-bottom: 0;
+}
+.backend__header .profile__position {
+  text-align: left;
+  font: normal normal normal 18px/27px "Poppins";
+  letter-spacing: 0px;
+  color: #888888;
+}
+.backend__header .profile__list ul {
+  padding: 0;
+  list-style: none;
+}
+.backend__header .profile__list li {
+  color: #888888;
+  font: normal normal normal 14px/21px "Poppins";
+}
+.backend__header .profile__list span {
+  color: #3E3E3E;
+}
+.backend__header .dropdown {
+  outline: none;
+}
+.backend__header .dropdown__profile button {
+  width: 61px;
+  height: 61px;
+  margin-left: auto;
+  line-height: 58px;
+  border: 2px solid #DCDCDC;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+}
+.backend__header .dropdown__profile button img {
+  width: 58px;
+  height: 58px;
+  vertical-align: top;
+}
+.backend__header .dropdown__profile button:after {
+  display: none;
+}
+.backend__header .dropdown__profile .dropdown-menu {
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 258px;
+}
+.backend__header .dropdown__profile .dropdown-item {
+  color: #959595;
+  font-size: 14px;
+  border-bottom: 1px solid #DBDBDB;
+  padding: 18px 0;
+}
+.backend__header .dropdown__profile .dropdown-item:last-child {
+  border-bottom: 0;
+}
+.backend__header .dropdown__profile .dropdown-item:hover, .backend__header .dropdown__profile .dropdown-item:focus {
+  color: #9100FF;
+  background-color: transparent;
+}
+
 .edit-btn {
   position: absolute;
   right: 0;
