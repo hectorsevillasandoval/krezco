@@ -17258,6 +17258,14 @@ a {
 .btn i {
   margin-right: 5px;
 }
+.btn--purple {
+  font-size: 14px;
+  background-color: #9100FF;
+  font-weight: normal;
+  color: white;
+  border-radius: 27px;
+  padding: 8px 15px;
+}
 .btn--gradient {
   background: transparent linear-gradient(219deg, #9100FF 0%, #4B00FF 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 20px rgba(106, 0, 255, 0.45);
@@ -20742,6 +20750,7 @@ a {
   border-radius: 30px;
   padding: 30px 35px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .vacantes .job-header__top {
   display: flex;
@@ -20850,6 +20859,35 @@ a {
 .vacantes .job-header__middle li strong {
   color: #565656;
   font-weight: 600;
+}
+.vacantes .job-header__bottom {
+  display: flex;
+  padding-top: 30px;
+}
+.vacantes .job-header__bottom-button {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.vacantes .job-header__bottom-right {
+  text-align: right;
+}
+.vacantes .job-header__bottom-salary {
+  font-size: 14px;
+  background-color: #8CC773;
+  color: white;
+  border-radius: 27px;
+  padding: 8px 15px;
+  line-height: 1.5;
+  display: inline-block;
+}
+.vacantes .job-header__bottom-left {
+  width: 50%;
+}
+.vacantes .job-header__bottom-right {
+  width: 50%;
 }
 
 /*# sourceMappingURL=theme.css.map */
