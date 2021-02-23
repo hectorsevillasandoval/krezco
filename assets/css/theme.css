@@ -20254,6 +20254,10 @@ a {
   top: 9px;
   padding-right: 10px;
 }
+.notificaciones .container .right-content {
+  display: flex;
+  justify-content: space-between;
+}
 
 .body-profile .container {
   max-width: 1420px;

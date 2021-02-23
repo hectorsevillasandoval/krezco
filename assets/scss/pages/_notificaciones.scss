@@ -319,6 +319,10 @@
                 padding-right: 10px;
             }
         }
+        .right-content {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 .body-profile {
