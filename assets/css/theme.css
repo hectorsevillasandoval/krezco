@@ -20737,4 +20737,119 @@ a {
   opacity: 1;
 }
 
+.vacantes .bordered-box {
+  border: 1px solid #D5D5D5;
+  border-radius: 30px;
+  padding: 30px 35px;
+  margin-top: 40px;
+}
+.vacantes .job-header__top {
+  display: flex;
+  margin-bottom: 24px;
+  min-height: 90px;
+}
+.vacantes .job-header__name {
+  position: relative;
+  padding-left: 117px;
+  width: 50%;
+}
+.vacantes .job-header__name-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.vacantes .job-header__name-title {
+  color: #3D3D3D;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.vacantes .job-header__name-company {
+  color: #888888;
+  font-size: 16px;
+}
+.vacantes .job-header__name-location {
+  color: #888888;
+  font-size: 14px;
+}
+.vacantes .job-header__top-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.vacantes .job-header__top-buttons .job-header__notification {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.vacantes .job-header__top-buttons .job-header__notification .form-check-label {
+  color: #878787;
+  font-size: 16px;
+}
+.vacantes .job-header__top-buttons .job-header__notification .form-check-input {
+  height: 36px;
+  width: 64px;
+  margin-left: 20px;
+  float: none;
+}
+.vacantes .job-header__top-buttons .job-header__apply {
+  margin-left: 29px;
+}
+.vacantes .job-header__top-buttons .btn {
+  width: 134px;
+  border-radius: 27px;
+  font-weight: normal;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: 0;
+}
+.vacantes .job-header__middle {
+  display: flex;
+  border-bottom: 1px solid #D5D5D5;
+}
+.vacantes .job-header__middle-aptitude {
+  font-size: 16px;
+  color: #646464;
+}
+.vacantes .job-header__middle-col {
+  padding-bottom: 18px;
+}
+.vacantes .job-header__middle-col:first-child {
+  padding-right: 75px;
+  border-right: 1px solid #D5D5D5;
+}
+.vacantes .job-header__middle-col:nth-child(2) {
+  padding-left: 63px;
+  padding-right: 63px;
+  border-right: 1px solid #D5D5D5;
+}
+.vacantes .job-header__middle-col:nth-child(3) {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.vacantes .job-header__middle ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.vacantes .job-header__middle li {
+  font-size: 16px;
+  color: #646464;
+  margin-bottom: 5px;
+}
+.vacantes .job-header__middle li.view-icon:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 40px;
+}
+.vacantes .job-header__middle li.carpet-icon:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 40px;
+}
+.vacantes .job-header__middle li strong {
+  color: #565656;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=theme.css.map */
