@@ -1,0 +1,140 @@
+.preguntas-frecuentes {
+   #accordion {
+   	max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+   	.card {
+   	 border:0px;
+   	  .card-header {
+   	  	background: #F1F1F1 0% 0% no-repeat padding-box;
+	    border-radius: 25px !important;
+	    text-align: center;
+	    padding-top: 17px;
+    	padding-bottom: 17px;
+    	margin-bottom: 20px;
+    	border:0px;
+    	&:after {
+   	  		content: url(../images/arrow-acordion.svg);        
+		    position: absolute;
+		    top: -15px;
+		    right: 0px;
+		    transform: scale(.7);
+		}
+   	  	.card-link {
+   	  		font-family: $worksans;
+   	  		font-weight: bold;
+   	  		color: #0A0A0A;	
+   	  		position:relative;
+   	  		}
+   	  	 }
+   	  	 .collapse {
+   	  	 	margin-bottom: 30px;
+	   	  	 .card-body {
+	   	  	 	background: #FFFFFF 0% 0% no-repeat padding-box;
+			    box-shadow: 0px 0px 50px #0000001a;
+			    border-radius: 35px;
+			    p {
+			    	font-family: $poppins;
+			    	font-size: 17px;
+			        color: #616260;
+				    padding: 20px 25px;
+				    line-height: 27px;
+			    }
+	   	  	 }
+	   	  }	 
+   	  }
+   }
+}
+.contactenos {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  .container {
+    .title {
+      padding-bottom: 40px;
+    }    
+    .bg-content {
+      margin-left: auto;
+      margin-right: auto;
+      form {
+        box-shadow: 0px 0px 50px #0000001a;
+        border-radius: 10px;
+        padding:50px 75px;
+        label {
+          padding-bottom: 5px;
+        }
+        input {
+          margin-bottom: 35px;
+        }
+      }
+    }      
+  }
+}
+@media screen and (max-width: 992px) { 
+ .preguntas-frecuentes {
+   #accordion {
+    .card {
+      .card-header {
+        .card-link {
+           padding-right: 60px;
+           display: block;
+          }  
+        }    
+       .card-body {
+          p {
+             font-size: 15px !important;
+          } 
+        }
+      }      
+    }
+  }
+  .contactenos {
+    .container {
+      .bg-content {
+          width: 100%;
+      }  
+    }    
+  }      
+}
+@media screen and (max-width: 767px) { 
+  .preguntas-frecuentes {
+    #accordion {
+      .card {
+        .card-header {
+            text-align: left;            
+        }    
+      }      
+    }        
+  }
+  .contactenos {
+    .container {
+      .bg-content {
+        form {
+          padding: 25px 25px;
+          .row {
+            display: block;
+          }  
+        }  
+      }    
+    }      
+  }        
+}    
+@media screen and (max-width: 600px) { 
+  .preguntas-frecuentes {
+    #accordion {
+      .card {
+        .card-header {
+          text-align: left;            
+          .card-link {
+            font-size: 14px;
+          }
+        }
+        .card-body {
+          p {
+            padding: 15px 10px !important;
+            font-size: 14px !important;
+          }   
+        }
+      }      
+    }        
+  }
+}

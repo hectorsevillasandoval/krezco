@@ -1,0 +1,168 @@
+.nosotros {
+    min-height: 595px;
+    background-color: #5A0D7E;
+    background-image: url(../images/sobre_nosotros_banner.jpg);
+    margin-bottom: 60px;
+    border-radius: 0px 0px 200px 200px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    &:before {
+        content: url(../images/bg-dots.png);        
+        position: absolute;
+        top: 200px;
+        left: -40px;
+        /*top: 0px;
+        left: 0px;*/
+    }
+    &__wrapper {
+        margin-top: 120px;
+        margin-bottom: 0 !important;
+    }
+    &__item {
+        &Wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media #{$tablet} {
+                flex-direction: row;
+            }
+        }
+    }
+    &__left {
+        @media #{$tablet} {
+            width: 50%;
+        }
+    }
+    &__right {
+        @media #{$tablet} {
+            width: 50%;
+        }
+    }
+    &__image {
+        position: relative;
+        img {
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            right: 0;
+        }
+        @media #{$desktop} {
+            height: 680px;
+            width: 510px;
+            margin-left: auto;
+            //background-color: $red;
+        }
+        &.empresas {
+            img {
+                top: 50%;
+                Transform: translateY(-50%);
+            }
+        }
+    }
+    &__title {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: $worksans;
+        text-align: center;
+        padding-bottom: 15px;
+        @media #{$tablet} {
+            font-size: 40px;
+            padding-top: 40px;
+        }
+        @media #{$desktop-large} {
+            font-size: 66px;
+        }
+        @media screen and (max-width: 767px) {
+            padding-top: 40px;
+        }
+    }
+    &__content {
+        color: white;
+        font-family: $poppins;
+        font-size: 19px;
+        line-height: 40px;
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        h4 {
+          font-size: 23px;
+          padding-bottom: 20px;
+          @media #{$tablet} {
+            font-size: 19px;
+          }
+          @media screen and (max-width: 767px) { 
+             font-size: 16px;
+          }
+        }
+        p {
+            font-size: 19px;
+            margin-bottom: 30px;
+            line-height: 30px;
+            @media #{$tablet} {
+                font-size: 17px;
+            }
+            @media screen and (max-width: 767px) { 
+                font-size: 16px;
+            }
+        }
+        @media #{$tablet} {
+            max-width: 100%;
+        }
+        @media #{$desktop} {
+            font-size: 20px;
+        }
+    }
+    .slick-dots {
+        bottom: 170px;
+    }
+    .slick-active {
+        .hero__left {
+            animation-name: fadeInUpSD;
+            animation-duration: 1s;
+            opacity: 1;
+            width: 100%;
+            padding: 10px 20px 30px 0;
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+ .nosotros {
+    &:before {
+      left:-100px;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {        
+.nosotros {
+    min-height: auto;    
+      &:before { 
+        top: 150px;
+        left:-150px;   
+      }  
+   } 
+}
+@media screen and (max-width: 992px) { 
+.nosotros {
+    &__wrapper {
+        margin-top: 0px;
+    }
+  }
+}  
+@media screen and (max-width: 767px) { 
+  .nosotros {
+    border-radius: 0px;
+    &:before { 
+        display: none;
+    }
+    .container {
+       max-width: 100%;
+    }
+  }
+}

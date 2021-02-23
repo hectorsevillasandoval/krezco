@@ -187,3 +187,125 @@
 		}
 	}
 }
+@media screen and (max-width: 1199px) {	
+ .footer {
+    .footer-bottom {
+    	.container {
+	      .publicaciones {
+	      	  .left-side {
+	      	  	 width: 90%;
+	      	  	 margin-bottom: 15px;
+	      	    }
+	      	    .right-side {
+	      	     width: 100%;	
+	      	    }
+	      	  }
+	       }	  
+	      .col {
+	       &.social-media {
+	        ul {
+	            li {
+	               width: 38px !important;
+    			   height: 38px !important;
+	          	  }
+	            }
+	         } 	
+	      }  
+	      .col {
+	       &.cuidades {
+	        ul { 
+	        	    display: block;
+				    flex-direction: initial;
+				    flex-wrap: initial;
+	        	}
+	         }	
+	      }  	
+       }
+    }
+ }   
+@media screen and (max-width: 992px) {	  
+  .news { 
+	 .col-sm-4 {
+	    flex: 0 0 auto;
+	    width: 50%;
+	    margin-bottom: 60px;
+      }
+  }  	  
+  .footer {
+    .footer-bottom {
+      &:before {
+      	display: none;
+      }
+      .container {	
+	    .col {
+		    flex: 50%;
+		    max-width: 50%;
+	    }
+	    .publicaciones {
+	      .left-side {
+	      	width: 40%;
+	      }	
+	      .right-side {
+	      	width: 60%;
+	      }
+	    } 
+	    .col {
+	     &.cuidades {  
+	       ul {	
+	       	    display: flex;
+			    flex-direction: column;
+			    flex-wrap: wrap;
+	       	}
+	      } 	
+	    }   	
+	  }    
+    }
+  }
+}      	
+@media screen and (max-width: 767px) {	
+ .news {
+   .col-sm-4 {
+    width: 100%;
+    &:last-child {
+    	margin-bottom: 0px;
+     }
+   } 
+ }
+ .footer {
+    .footer-bottom {
+       .container {	
+	       .col {
+		       &.cuidades {
+		        ul { 
+		        	    display: block;
+					    flex-direction: initial;
+					    flex-wrap: initial;
+		        	}
+		         }	
+		      }
+		   }     	
+       }
+    }  
+}
+@media screen and (max-width: 500px) {	
+ .footer {
+   .footer-bottom {
+   	 padding-bottom: 20px;
+     .container {
+       .col {
+         flex: 100%;
+         max-width: 100%;
+        } 
+       .col {
+        &.cuidades {
+         ul {
+		    display: flex;
+		    flex-direction: column;
+		    flex-wrap: wrap;
+		    }
+		  }  
+		} 
+      }   
+    }     
+  }       
+}
