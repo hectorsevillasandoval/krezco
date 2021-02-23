@@ -12,6 +12,217 @@ a {
     font: normal normal normal 12px/18px $worksans;
 }
 
+.backend {
+    &__header {
+        background-color: white;
+        box-shadow: 0px 3px 6px #0000000A;
+        padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &-content {
+            height: 440px;
+        }
+        .profile {
+            &__row {
+                max-width: 1355px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 42px;
+                .row-title {
+                    text-align: left;
+                    font: normal normal 600 18px/27px Poppins;
+                    letter-spacing: 0px;
+                    color: #646464;
+                    margin-bottom: 21px;
+                }
+            }
+            &__badge {
+                width: 400px;
+                border: 1px solid #D5D5D5;
+                border-radius: 30px;
+                padding: 28px 41px;
+                position: relative;
+                &-list {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    span {
+                        width: 51px;
+                        height: 64px;
+                        background-image: url(../images/badge.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-right: 30px;
+                        margin-bottom: 5px;
+                        &:nth-child(4n + 4) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &-footer {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 0;
+                    right: 20px;
+                    text-align: right;
+                    a {
+                        color: #979797;
+                        font-size: 14px;
+                        &:hover,
+                        &:focus {
+                            color: $purple;
+                        }
+                        i {
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+            &__about {
+                width: 920px;
+                border: 1px solid #D5D5D5;
+                border-radius: 30px;
+                padding: 20px 41px;
+                position: relative;
+                p {
+                    text-align: left;
+                    font: normal normal normal 16px/25px Poppins;
+                    letter-spacing: 0px;
+                    color: #646464;
+                }
+            }
+            &__photo {
+                margin-top: -80px;
+                z-index: 99;
+                position: relative;
+            }
+            &__details {
+                padding-left: 46px;
+                padding-top: 16px;
+                position: relative;
+                .icon-tools {
+                    position: absolute;
+                    right: -50px;
+                    top: 16px;
+                    a {
+                        display: block;
+                    }
+                }
+            }
+            &__info {
+                display: flex;
+            }
+            &__social {
+                padding-top: 16px;
+                display: flex;
+                &__contacts {
+                    color: #5D5D5D;
+                    font-size: 18px;
+                    padding-top: 1px;
+                    a {
+                        color: $purple;
+                    }
+                }
+                &__links {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin-left: 24px;
+                    li {
+                        margin-right: 20px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    a {
+                        transition: transform ease-in 0.3s;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    i {
+                        color: #CBCBCB;
+                        font-size: 28px;
+                    }
+                }
+            }
+            &__name {
+                text-align: left;
+                font: normal normal normal 22px/33px $poppins;
+                letter-spacing: 0px;
+                color: #3D3D3D;
+                margin-bottom: 0;
+            }
+            &__position {
+                text-align: left;
+                font: normal normal normal 18px/27px $poppins;
+                letter-spacing: 0px;
+                color: #888888;
+            }
+            &__list {
+                ul {
+                    padding: 0;
+                    list-style: none;
+                }
+                li {
+                    color: #888888;
+                    font: normal normal normal 14px/21px $poppins;
+                }
+                span {
+                    color: #3E3E3E;
+                }
+            }
+        }
+        .dropdown {
+            outline: none;
+            &__profile {
+                button {
+                    width: 61px;
+                    height: 61px;
+                    margin-left: auto;
+                    line-height: 58px;
+                    border: 2px solid #DCDCDC;
+                    background-color: transparent;
+                    padding: 0;
+                    border-radius: 50%;
+                    img {
+                        width: 58px;
+                        height: 58px;
+                        vertical-align: top;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+                .dropdown-menu {
+                    padding-left: 17px;
+                    padding-right: 17px;
+                    width: 258px;
+                }
+                .dropdown-item {
+                    color: #959595;
+                    font-size: 14px;
+                    border-bottom: 1px solid #DBDBDB;
+                    padding: 18px 0;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    &:hover,
+                    &:focus {
+                        color: #9100FF;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .edit-btn {
     position: absolute;
     right: 0;
