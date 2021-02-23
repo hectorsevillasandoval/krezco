@@ -1,9 +1,11 @@
 .vacantes {
+    background: #efefef;
     .bordered-box {
         border: 1px solid #D5D5D5;
         border-radius: 30px;
         padding: 30px 35px;
         margin-top: 40px;
+        background: $white;
         &__header {
             margin-bottom: 30px;
             padding-bottom: 30px;
@@ -13,6 +15,199 @@
                 color: #646464;
                 font-size: 18px;
                 font-weight: 600;
+            }
+            .content {
+              padding-top: 42px;                  
+                p {
+                    color: #646464;
+                    font-family: $poppins;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+        &__body {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            /*border-bottom: 1px solid #D5D5D5;*/
+            &-title {
+                color: #646464;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .content {
+              padding-top: 20px;  
+                .title {
+                    color: #646464;
+                    font-size: 18px;
+                    font-weight: 600;  
+                    text-align: left;
+                    padding-bottom: 20px;     
+                }
+                p {
+                    color: #646464;
+                    font-family: $poppins;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+                ul {
+                    -moz-column-count: 2;
+                    column-count: 2;
+                    padding-left: 0;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    li {
+                        list-style: none;
+                        color: #646464;
+                        font-family: $poppins;
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-bottom: 4px;
+                        &:before {
+                            content: "\f00c";
+                            font-family: "Font Awesome 5 Free";
+                            padding-right: 10px;
+                            color: #7821A0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comentarios {
+        margin-bottom: 40px;
+        .preguntas {
+            color: #646464;
+            font-size: 18px;
+            font-weight: 600;  
+            text-align: left;
+            padding-bottom: 20px;   
+            border-bottom: 1px solid #D5D5D5;  
+        }
+        .contenido {
+                padding-top:30px;
+                .imagen-de-perfil {
+                    float: left;
+                    padding-right: 25px;
+                }
+                .dialogo {                    
+                    span {                        
+                        color:#888888;
+                        font-size: 12px;
+                        font-family: $poppins;
+                        &.nombre {
+                            color:#3D3D3D;
+                            font-family: $poppins;
+                            font-size: 16px;
+                            line-height: 26px;
+                            display: block;
+                        }
+                        &.hora {
+                            float: right;
+                        }
+                    }
+                    .texto {
+                        position: relative;
+                        margin: 15px 0px 22px 75px;
+                        padding: 15px 25px;
+                        background-color: #F5F5F5;
+                        border: 1px solid #D5D5D5;                        
+
+                        p {
+                            font-family: $poppins;
+                            font-size: 16px;
+                            color: #646464;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        .respuesta {
+            width: 75%;
+            margin-left: auto;
+            position:relative;
+            span {
+                color:#888888;
+                font-size: 12px;
+                font-family: $poppins;
+            }
+            .comentario-empresa {
+                position: relative;
+                margin: 15px 100px 22px 0px;
+                padding: 15px 25px;
+                background-color: #F5F5F5;
+                border: 1px solid #D5D5D5;
+                p {
+                    font-family: $poppins;
+                    font-size: 16px;
+                    color: #646464;
+                    line-height: 25px;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+        }    
+        .preguntanos {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            .title {
+                font-family: $poppins;
+                color: #646464;
+                font-size: 18px;
+                font-weight: 600;  
+                text-align: left;
+                padding-top: 20px;
+                border-top: 1px solid #D5D5D5;
+                padding-bottom: 30px;
+            }
+            .justificar-contenido {
+                display: flex;
+                .imagen-de-perfil {
+                  margin-right: 25px;
+                }
+                .area-de-texto {
+                  width: 100%;  
+                    textarea { 
+                      width: 100%;
+                      border: 1px solid #CFCFCF;
+                      font-family: $poppins;              
+                      color: #B1B1B1;
+                      font-size: 16px;
+                      line-height: 25px;                        
+                      letter-spacing: 0px;
+                      padding: 25px;
+                      border-radius: 20px;
+                      &:focus {
+                        outline: none;
+                       }
+                    }
+                    .btn {
+                        margin-top: 30px;
+                        border-radius: 27px;
+                        font-weight: normal;
+                        border: 0;
+                        font-size: 14px;
+                        width: 171px;                        
+                    }  
+                }
+            }  
+        }
+    }
+    .bottom-content {
+      margin-bottom: 50px;  
+        .button {
+          display: flex;  
+          justify-content: flex-end;
+            .btn {
+                  border-radius: 30px;
+                  max-width: 340px;
+                  font-size: 18px;
+                  font-weight: 300;
+                  margin-left: 20px;
             }
         }
     }

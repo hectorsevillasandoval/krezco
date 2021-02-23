@@ -20773,11 +20773,15 @@ a {
   color: #fff;
 }
 
+.vacantes {
+  background: #efefef;
+}
 .vacantes .bordered-box {
   border: 1px solid #D5D5D5;
   border-radius: 30px;
   padding: 30px 35px;
   margin-top: 40px;
+  background: #fff;
 }
 .vacantes .bordered-box__header {
   margin-bottom: 30px;
@@ -20789,6 +20793,196 @@ a {
   color: #646464;
   font-size: 18px;
   font-weight: 600;
+}
+.vacantes .bordered-box__header .content {
+  padding-top: 42px;
+}
+.vacantes .bordered-box__header .content p {
+  color: #646464;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 25px;
+}
+.vacantes .bordered-box__body {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  /*border-bottom: 1px solid #D5D5D5;*/
+}
+.vacantes .bordered-box__body-title {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 600;
+}
+.vacantes .bordered-box__body .content {
+  padding-top: 20px;
+}
+.vacantes .bordered-box__body .content .title {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.vacantes .bordered-box__body .content p {
+  color: #646464;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 25px;
+}
+.vacantes .bordered-box__body .content ul {
+  -moz-column-count: 2;
+  column-count: 2;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.vacantes .bordered-box__body .content ul li {
+  list-style: none;
+  color: #646464;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 4px;
+}
+.vacantes .bordered-box__body .content ul li:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding-right: 10px;
+  color: #7821A0;
+}
+.vacantes .comentarios {
+  margin-bottom: 40px;
+}
+.vacantes .comentarios .preguntas {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D5D5D5;
+}
+.vacantes .comentarios .contenido {
+  padding-top: 30px;
+}
+.vacantes .comentarios .contenido .imagen-de-perfil {
+  float: left;
+  padding-right: 25px;
+}
+.vacantes .comentarios .contenido .dialogo span {
+  color: #888888;
+  font-size: 12px;
+  font-family: "Poppins";
+}
+.vacantes .comentarios .contenido .dialogo span.nombre {
+  color: #3D3D3D;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+}
+.vacantes .comentarios .contenido .dialogo span.hora {
+  float: right;
+}
+.vacantes .comentarios .contenido .dialogo .texto {
+  position: relative;
+  margin: 15px 0px 22px 75px;
+  padding: 15px 25px;
+  background-color: #F5F5F5;
+  border: 1px solid #D5D5D5;
+}
+.vacantes .comentarios .contenido .dialogo .texto p {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #646464;
+  line-height: 25px;
+}
+.vacantes .comentarios .respuesta {
+  width: 75%;
+  margin-left: auto;
+  position: relative;
+}
+.vacantes .comentarios .respuesta span {
+  color: #888888;
+  font-size: 12px;
+  font-family: "Poppins";
+}
+.vacantes .comentarios .respuesta .comentario-empresa {
+  position: relative;
+  margin: 15px 100px 22px 0px;
+  padding: 15px 25px;
+  background-color: #F5F5F5;
+  border: 1px solid #D5D5D5;
+}
+.vacantes .comentarios .respuesta .comentario-empresa p {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #646464;
+  line-height: 25px;
+}
+.vacantes .comentarios .respuesta img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.vacantes .comentarios .preguntanos {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.vacantes .comentarios .preguntanos .title {
+  font-family: "Poppins";
+  color: #646464;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 20px;
+  border-top: 1px solid #D5D5D5;
+  padding-bottom: 30px;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido {
+  display: flex;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido .imagen-de-perfil {
+  margin-right: 25px;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido .area-de-texto {
+  width: 100%;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido .area-de-texto textarea {
+  width: 100%;
+  border: 1px solid #CFCFCF;
+  font-family: "Poppins";
+  color: #B1B1B1;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  padding: 25px;
+  border-radius: 20px;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido .area-de-texto textarea:focus {
+  outline: none;
+}
+.vacantes .comentarios .preguntanos .justificar-contenido .area-de-texto .btn {
+  margin-top: 30px;
+  border-radius: 27px;
+  font-weight: normal;
+  border: 0;
+  font-size: 14px;
+  width: 171px;
+}
+.vacantes .bottom-content {
+  margin-bottom: 50px;
+}
+.vacantes .bottom-content .button {
+  display: flex;
+  justify-content: flex-end;
+}
+.vacantes .bottom-content .button .btn {
+  border-radius: 30px;
+  max-width: 340px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px;
 }
 .vacantes .job-header__top {
   display: flex;
