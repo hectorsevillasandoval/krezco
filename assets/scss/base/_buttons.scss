@@ -16,6 +16,13 @@
         border-radius: 27px;
         padding: 8px 15px;
     }
+    &--gray {
+        font-size: 16px;
+        font-weight: normal;
+        background-color: #DBDBDB;
+        border-radius: 27px;
+        color: white;
+    }
     &--gradient {
         background: transparent linear-gradient(219deg, #9100FF 0%, #4B00FF 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 10px 20px rgba(106, 0, 255, 0.45);
@@ -25,6 +32,12 @@
         border: 1px solid white;
         &:hover {
             background: transparent linear-gradient(269deg, #5300FF 0%, #9100FF 100%) 0% 0% no-repeat padding-box;
+        }
+        &-small {
+            border-radius: 27px;
+            border: 0;
+            font-weight: normal;
+            font-size: 16px;
         }
     }
     &__icon {
