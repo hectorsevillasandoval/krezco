@@ -20884,14 +20884,20 @@ a {
 .vacantes .comentarios .contenido .dialogo span.hora {
   float: right;
 }
-.vacantes .comentarios .contenido .dialogo .texto {
+.vacantes .comentarios .contenido .dialogo .caja-comentario {
   position: relative;
   margin: 15px 0px 22px 75px;
+}
+.vacantes .comentarios .contenido .dialogo .caja-comentario:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding-right: 10px;
+  color: #7821A0;
+}
+.vacantes .comentarios .contenido .dialogo .caja-comentario p {
   padding: 15px 25px;
   background-color: #F5F5F5;
   border: 1px solid #D5D5D5;
-}
-.vacantes .comentarios .contenido .dialogo .texto p {
   font-family: "Poppins";
   font-size: 16px;
   color: #646464;
@@ -21066,7 +21072,8 @@ a {
 }
 .vacantes .job-header__middle-col:nth-child(3) {
   padding-left: 48px;
-  padding-right: 48px;
+  /*padding-right: 48px;*/
+  width: 40%;
 }
 .vacantes .job-header__middle ul {
   margin: 0;
@@ -21079,14 +21086,30 @@ a {
   margin-bottom: 5px;
 }
 .vacantes .job-header__middle li.view-icon:before {
-  content: "";
+  content: "";
   font-family: "Font Awesome 5 Free";
-  padding-left: 40px;
+  color: #C2C2C2;
+  padding-right: 15px;
+}
+.vacantes .job-header__middle li.view-icon a {
+  float: right;
+}
+.vacantes .job-header__middle li.view-icon a i {
+  color: #C2C2C2;
+  padding-right: 15px;
 }
 .vacantes .job-header__middle li.carpet-icon:before {
-  content: "";
+  content: "";
   font-family: "Font Awesome 5 Free";
-  padding-left: 40px;
+  color: #C2C2C2;
+  padding-right: 15px;
+}
+.vacantes .job-header__middle li.carpet-icon a {
+  float: right;
+}
+.vacantes .job-header__middle li.carpet-icon a i {
+  color: #C2C2C2;
+  padding-right: 15px;
 }
 .vacantes .job-header__middle li strong {
   color: #565656;

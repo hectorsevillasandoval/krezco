@@ -107,14 +107,20 @@
                             float: right;
                         }
                     }
-                    .texto {
+                    .caja-comentario {
                         position: relative;
-                        margin: 15px 0px 22px 75px;
-                        padding: 15px 25px;
-                        background-color: #F5F5F5;
-                        border: 1px solid #D5D5D5;                        
+                        margin: 15px 0px 22px 75px;                        
+                        &:before {
+                            content: "\f0dd";
+                            font-family: "Font Awesome 5 Free";
+                            padding-right: 10px;
+                            color: #7821A0;
+                        }                    
 
                         p {
+                            padding: 15px 25px;
+                            background-color: #F5F5F5;
+                            border: 1px solid #D5D5D5;    
                             font-family: $poppins;
                             font-size: 16px;
                             color: #646464;
@@ -292,7 +298,8 @@
                 }
                 &:nth-child(3) {
                     padding-left: 48px;
-                    padding-right: 48px;
+                    /*padding-right: 48px;*/
+                    width: 40%;
                 }
             }
             ul {
@@ -306,16 +313,32 @@
                 margin-bottom: 5px;
                 &.view-icon {
                     &:before {
-                        content: "";
-                        font-family: $fontawesome;
-                        padding-left: 40px;
+                        content: "\f06e";
+                        font-family: $fontawesome;                        
+                        color: #C2C2C2;
+                        padding-right: 15px;
+                    }
+                    a {
+                        float: right;
+                        i {
+                            color: #C2C2C2;
+                            padding-right: 15px;
+                        }
                     }
                 }
                 &.carpet-icon {
                     &:before {
-                        content: "\f30b";
+                        content: "\f07c";
                         font-family: $fontawesome;
-                        padding-left: 40px;
+                        color: #C2C2C2;
+                        padding-right: 15px;
+                    }
+                    a {
+                        float: right;
+                        i {
+                            color: #C2C2C2;
+                            padding-right: 15px;
+                        }
                     }
                 }
                 strong {
