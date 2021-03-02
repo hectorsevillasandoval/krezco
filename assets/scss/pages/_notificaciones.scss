@@ -175,8 +175,10 @@
     }
     &__cover-photo {
         height: 251px;
-        background-color: #E8E8E8;
+        /*background: url(../images/bac-cover-photo.jpg);*/
         position: relative;
+        background-size: contain;
+        background-color: #E8E8E8;
         &.no-cover-image {
             &:before {
                 content: "";

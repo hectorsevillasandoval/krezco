@@ -17,12 +17,19 @@
                 font-weight: 600;
             }
             .content {
-              padding-top: 42px;                  
+              padding-top: 42px;    
+                img {
+                    width: 100%;
+                    margin-bottom: 25px;
+                }              
                 p {
                     color: #646464;
                     font-family: $poppins;
                     font-size: 16px;
                     line-height: 25px;
+                    span {
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -111,7 +118,8 @@
                         position: relative;
                         margin: 15px 0px 22px 75px;                        
                         &:before {
-                            content: "\f0dd";
+                            //content: "\f0dd";
+                            /*content: url(../images/coment_icon.png);*/
                             font-family: "Font Awesome 5 Free";
                             padding-right: 10px;
                             color: #7821A0;
@@ -403,6 +411,26 @@
                     width: 171px;
                     margin-left: auto;
                     margin-right: auto;
+                }
+                .social-media {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 40px;
+                    border-bottom: 0px;
+                    li {
+                        margin-right: 20px;
+                        a {
+                        .fab {
+                                font-size: 35px;
+                                color: #CBCBCB;
+                            }
+                            &:hover {
+                                .fab {
+                                  color: $black;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
