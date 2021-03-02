@@ -8,6 +8,19 @@
     i {
         margin-right: 5px;
     }
+    &--cancel {
+        font-size: 14px;
+        background-color: #F1F1F1;
+        font-weight: normal;
+        color: white;
+        border-radius: 27px;
+        padding: 8px 15px;
+        color: #9100FF;
+        &:hover,
+        &:focus {
+            background-color: darken(#F1F1F1, 10);
+        }
+    }
     &--purple {
         font-size: 14px;
         background-color: #9100FF;
