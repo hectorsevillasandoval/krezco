@@ -707,3 +707,37 @@
         }
     }
 }
+
+.kr-modal {
+    .modal-content {
+        border-radius: 27px;
+    }
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-footer {
+        justify-content: center;
+        border-top: 0;
+        .btn {
+            max-width: 173px;
+        }
+    }
+    .modal-body {
+        font-size: 14px;
+        color: #646464;
+    }
+    .modal-title {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $poppins;
+        letter-spacing: 0px;
+        color: #646464;
+        opacity: 1;
+    }
+    .close {
+        background-color: transparent;
+        border: 0;
+        color: #646464;
+    }
+}

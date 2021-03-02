@@ -179,7 +179,7 @@
                     <div class="box left-col">
                         <div class="head">
                             <div class="title">Experiencia</div>
-                            <a href="#"><img src="assets/images/add-button.png" alt="Agregar Experiencia" /></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#kr-modal" data-title="Experiencia"><img src="assets/images/add-button.png" alt="Agregar Experiencia" /></a>
                         </div>
                         <!-- company -->
                         <div class="company">
@@ -526,7 +526,7 @@
     </section>
 
     <!-- Profile Body END -->
-        <footer class="footer__backend">
+    <footer class="footer__backend">
         <div class="container">
             <div class="row align-items-md-center">
                 <div class="col-12 col-md-6">
@@ -557,7 +557,31 @@
             </div>
         </div>
     </footer>
-    
+
+    <!-- Modals -->
+    <div id="kr-modal" class="kr-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title"></div>
+                    <!-- END Modal Title -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <!-- Modal Header END -->
+                <div class="modal-body">
+
+                    Este es un ejemplo
+                </div>
+                <!-- Modal Body END -->
+                <div class="modal-footer">
+                    <button type="button" data-bs-dismiss="modal" class="btn btn--cancel">Cancelar</button>
+                    <button type="button" class="btn btn--small btn--purple">Agregar</button>
+                </div>
+            </div>
+            <!-- Modal Content END -->
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>

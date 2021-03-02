@@ -17258,6 +17258,18 @@ a {
 .btn i {
   margin-right: 5px;
 }
+.btn--cancel {
+  font-size: 14px;
+  background-color: #F1F1F1;
+  font-weight: normal;
+  color: white;
+  border-radius: 27px;
+  padding: 8px 15px;
+  color: #9100FF;
+}
+.btn--cancel:hover, .btn--cancel:focus {
+  background-color: #d8d8d8;
+}
 .btn--purple {
   font-size: 14px;
   background-color: #9100FF;
@@ -20191,6 +20203,38 @@ a {
   letter-spacing: 0px;
   color: #4B00FF;
   opacity: 1;
+}
+
+.kr-modal .modal-content {
+  border-radius: 27px;
+}
+.kr-modal .modal-header {
+  border-bottom: 0;
+}
+.kr-modal .modal-footer {
+  justify-content: center;
+  border-top: 0;
+}
+.kr-modal .modal-footer .btn {
+  max-width: 173px;
+}
+.kr-modal .modal-body {
+  font-size: 14px;
+  color: #646464;
+}
+.kr-modal .modal-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
+  letter-spacing: 0px;
+  color: #646464;
+  opacity: 1;
+}
+.kr-modal .close {
+  background-color: transparent;
+  border: 0;
+  color: #646464;
 }
 
 .nuestros-socios .container .title {
