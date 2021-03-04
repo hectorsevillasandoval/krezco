@@ -21583,7 +21583,7 @@ a {
   width: 50%;
 }
 .vacantes .vacancy__sidebar-content {
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 .vacantes .vacancy__sidebar-content ul {
   list-style: none;
@@ -21592,7 +21592,7 @@ a {
   border-bottom: 1px solid #D5D5D5;
 }
 .vacantes .vacancy__sidebar-content li {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 .vacantes .vacancy__sidebar-content li strong {
@@ -21649,6 +21649,12 @@ a {
   top: 2px;
 }
 
+.perfil-empresa .vacancy__sidebar .bordered-box:first-child {
+  margin-top: 0;
+}
+.perfil-empresa .vacancy__description {
+  margin-top: 0;
+}
 .perfil-empresa .profile__cover-photo {
   background: url(../images/bac-cover-photo.jpg);
   background-size: contain;
@@ -21729,12 +21735,7 @@ a {
   padding-right: 0px;
 }
 .perfil-empresa.usuario .bordered-box {
-  margin-bottom: 60px;
-}
-.perfil-empresa.usuario .bordered-box__header {
-  border-bottom: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 40px;
 }
 .perfil-empresa.usuario .recomendaciones {
   max-width: 1420px;
@@ -21897,9 +21898,65 @@ a {
   color: #fff;
   border-radius: 20px;
   padding: 8px 18px;
+  font-size: 16px;
+  display: block;
 }
 .perfil-empresa.usuario .recomendaciones .box .one-half .footer .bottom-content ul li a:hover {
   background: #5e1198;
+}
+
+.eventos__row {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D5D5D5;
+}
+.eventos__row:first-child {
+  padding-top: 0;
+}
+.eventos__row:last-child {
+  border-bottom: 0;
+}
+.eventos__grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.eventos__title {
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.eventos__item {
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+.eventos__item:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+.eventos__item-photo {
+  width: 360px;
+  height: 260px;
+  background-color: rgba(136, 136, 136, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.eventos__item-photo img {
+  object-fit: cover;
+}
+.eventos__item-title {
+  font-size: 18px;
+  color: #3D3D3D;
+  line-height: 27px;
+}
+.eventos__item-place {
+  color: #888888;
+  font-size: 14px;
+  line-height: 21px;
+}
+.eventos__item-date {
+  color: #5A0D7E;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=theme.css.map */

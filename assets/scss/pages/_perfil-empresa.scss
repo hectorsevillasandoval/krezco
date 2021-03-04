@@ -1,277 +1,288 @@
 .perfil-empresa {
-	.profile {
-		&__cover-photo {
-			background: url(../images/bac-cover-photo.jpg);
-			background-size:contain;
-		}	
-		&__header-info-photo {
-			margin-left: 40px;
-		}
-		&__header-info-description-slogan {
-			font-size: 16px;
-		}
-		&__header-info-right {
-			padding-right: 30px;
-		}
-	} 
-	.comentarios {
+    .vacancy {
+        &__sidebar {
+            .bordered-box {
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__description {
+            margin-top: 0;
+        }
+    }
+    .profile {
+        &__cover-photo {
+            background: url(../images/bac-cover-photo.jpg);
+            background-size: contain;
+        }
+        &__header-info-photo {
+            margin-left: 40px;
+        }
+        &__header-info-description-slogan {
+            font-size: 16px;
+        }
+        &__header-info-right {
+            padding-right: 30px;
+        }
+    }
+    .comentarios {
         .post-pefil-de-empresa {
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #D5D5D5;
         }
-		.preguntas	{
-			border-bottom: 0px !important;
-			span {
-				display: block;
-				font-weight: 500;
-	    		font-size: 14px;
-	    		padding-top: 10px;
-			}
-		}
-		.pefil-de-empresa {
-			display: flex;
-			margin-bottom: 30px;
-    		margin-top: 10px;
-			.title {				
-				padding-left:20px;
-				font-family: $poppins;
-				color: #3D3D3D;
-				font-size: 19px;
-			    font-weight: 600;
-			    line-height: 33px;
-			    text-align: left;			    
-			    
-			    span {
-			    	display: block;
-			    	font-size: 14px;
-			    	font-weight: 500;
-			    }
-			}
-		}
-		.publicaciones-empresa {
-			.blog {
-				p {
-					color: #646464;
-				    font-family: $poppins;
-				    font-size: 16px;
-				    line-height: 25px;
-				}
-				img {
-					width: 100%;
-				}
-				.compartir {
-					ul {
-						display: flex;
-						justify-content: left;
-						padding-left:0px;
-						margin-top: 30px;
-						align-items: flex-end;
-						li {
-							  list-style: none;
-							  padding-right: 20px;
-							  color: #888888;
-							  font-size: 13px;
-							  font-weight: 600;
-
-							img {
-								width: auto;
-							}
-							.fas {
-						      font-size: 21px;
-						      color: #BCBCBC;
-							}
-							&:last-child {
-								padding-right: 0px;
-							}
-						}
-					}
-				}
-			}	
-		}
-	}	
-	&.usuario {
-	  .bordered-box {
-	  	margin-bottom: 60px;
-	  	&__header	 {
-	  		border-bottom:0px;
-	  		margin-bottom: 0px;
-	  		padding-bottom: 0px;
-	  	}
-
-	  }
-	.recomendaciones {
-        max-width: 1420px;        
-        .box {
-            background: #fff;
-            border-radius: 30px;
-            box-shadow: 0px 3px 6px #0000000a;            
-            margin-bottom: 50px;
-            .text {                
+        .preguntas {
+            border-bottom: 0px !important;
+            span {
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                padding-top: 10px;
+            }
+        }
+        .pefil-de-empresa {
+            display: flex;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            .title {
+                padding-left: 20px;
                 font-family: $poppins;
+                color: #3D3D3D;
+                font-size: 19px;
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 27px;
+                line-height: 33px;
+                text-align: left;
                 span {
                     display: block;
-                    font-weight: 300;
-                    font-size: 13px;
-                    line-height: 18px;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
             }
-            .one-half {
-                width: 100%;
-                margin-top: 30px;
-                margin-bottom: 20px;
-                border: 1px solid #D5D5D5;
-                border-radius: 30px;
-                padding: 28px 30px 15px 30px;
-                .head {
-                    .company {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        padding-bottom: 35px;
-                        border-bottom: 1px solid #bdbdbd;
-                        margin-bottom: 35px;
-                        position: relative;
-                        &:last-child {
-                            margin-bottom: 0;
-                            padding-bottom: 0;
-                        }
-                        &__wrapper {
-                            display: flex;
-                            align-items: center;
-                            /*justify-content: space-between;*/
-                            .logo {
-                                margin-right: 20px;
+        }
+        .publicaciones-empresa {
+            .blog {
+                p {
+                    color: #646464;
+                    font-family: $poppins;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+                img {
+                    width: 100%;
+                }
+                .compartir {
+                    ul {
+                        display: flex;
+                        justify-content: left;
+                        padding-left: 0px;
+                        margin-top: 30px;
+                        align-items: flex-end;
+                        li {
+                            list-style: none;
+                            padding-right: 20px;
+                            color: #888888;
+                            font-size: 13px;
+                            font-weight: 600;
+                            img {
+                                width: auto;
                             }
-                            .content {
-                               width: 55%;
-                               padding-top:0px;
-                                .cargo {
-                                    font-family: $poppins;
-                                    font-size: 18px;
-                                    color: #3D3D3D;
-                                    line-height: 27px;
-                                    font-weight: 300;
-                                }
-                                .lugar {
-                                    font-family: $poppins;
-                                    font-size: 16px;
-                                    color: #888888;
-                                    line-height: 25px;
-                                    font-weight: 300;
-                                }
-                                .cuidad {
-                                    font-family: $poppins;
-                                    font-size: 14px;
-                                    line-height: 21px;
-                                    font-weight: 300;                                    
-                                }
+                            .fas {
+                                font-size: 21px;
+                                color: #BCBCBC;
                             }
-                            .aplicar {
-                                width: 30%;
-                                a {
-                                    border-radius: 30px;
-                                    padding: 7px 10px;
-                                    &:hover {
-                                        color: $white;
-                                    }
-                                }
+                            &:last-child {
+                                padding-right: 0px;
                             }
                         }
                     }
                 }
-                .body {
-                    margin-top: 40px;
-                    border-bottom: 1px solid #bdbdbd;
-                    display: flex;
-                    align-items: center;
-                    /*justify-content: space-between;*/
-                    .left-side {
-                      width: 50%; 
-                      border-right: 1px solid #bdbdbd;
-                        ul {
-                            padding-left:0px;
-                            li {
-                                list-style: none;
-                                padding-bottom: 6px;
+            }
+        }
+    }
+    &.usuario {
+        .bordered-box {
+            margin-bottom: 40px;
+            &__header {
+                // border-bottom: 0px;
+                // margin-bottom: 0px;
+                // padding-bottom: 0px;
+            }
+        }
+        .recomendaciones {
+            max-width: 1420px;
+            .box {
+                background: #fff;
+                border-radius: 30px;
+                box-shadow: 0px 3px 6px #0000000a;
+                margin-bottom: 50px;
+                .text {
+                    font-family: $poppins;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    span {
+                        display: block;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 18px;
+                    }
+                }
+                .one-half {
+                    width: 100%;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    border: 1px solid #D5D5D5;
+                    border-radius: 30px;
+                    padding: 28px 30px 15px 30px;
+                    .head {
+                        .company {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            padding-bottom: 35px;
+                            border-bottom: 1px solid #bdbdbd;
+                            margin-bottom: 35px;
+                            position: relative;
+                            &:last-child {
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                            }
+                            &__wrapper {
+                                display: flex;
+                                align-items: center;
+                                /*justify-content: space-between;*/
+                                .logo {
+                                    margin-right: 20px;
+                                }
+                                .content {
+                                    width: 55%;
+                                    padding-top: 0px;
+                                    .cargo {
+                                        font-family: $poppins;
+                                        font-size: 18px;
+                                        color: #3D3D3D;
+                                        line-height: 27px;
+                                        font-weight: 300;
+                                    }
+                                    .lugar {
+                                        font-family: $poppins;
+                                        font-size: 16px;
+                                        color: #888888;
+                                        line-height: 25px;
+                                        font-weight: 300;
+                                    }
+                                    .cuidad {
+                                        font-family: $poppins;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        font-weight: 300;
+                                    }
+                                }
+                                .aplicar {
+                                    width: 30%;
+                                    a {
+                                        border-radius: 30px;
+                                        padding: 7px 10px;
+                                        &:hover {
+                                            color: $white;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                    .right-side {
-                      width: 50%;                         
-                        ul {                            
-                            li {
-                                list-style: none;
-                                padding-bottom: 6px;
-                                a {
-                                    float: right;
-                                    i {
-                                        &:hover {
-                                            color: $black;
+                    .body {
+                        margin-top: 40px;
+                        border-bottom: 1px solid #bdbdbd;
+                        display: flex;
+                        align-items: center;
+                        /*justify-content: space-between;*/
+                        .left-side {
+                            width: 50%;
+                            border-right: 1px solid #bdbdbd;
+                            ul {
+                                padding-left: 0px;
+                                li {
+                                    list-style: none;
+                                    padding-bottom: 6px;
+                                }
+                            }
+                        }
+                        .right-side {
+                            width: 50%;
+                            ul {
+                                li {
+                                    list-style: none;
+                                    padding-bottom: 6px;
+                                    a {
+                                        float: right;
+                                        i {
+                                            &:hover {
+                                                color: $black;
+                                            }
                                         }
                                     }
-                                  }
-                            	  i {
-	                               color: #C2C2C2;
-	                               padding-right: 15px;
-                               	  }
-                               }
-                            }   
-                        }       
+                                    i {
+                                        color: #C2C2C2;
+                                        padding-right: 15px;
+                                    }
+                                }
+                            }
+                        }
                     }
-                   .footer {
-                      margin-top: 20px;    
-                   .actitudes {
-                    padding-bottom:10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                        .left-content {
-                            font-family: $poppins;
-                            font-size: 16px;
-                            line-height: 26px;
-                            span {
-                              display: block;  
-                         }
-                      }
-                        .right-content {
-                            a {
-                                background: #8CC773;
-                                color: #fff;
-                                border-radius: 20px;
-                                padding: 8px 18px;
-                            &:hover {
-                               background: #81b56b;
-                            }    
-                         }
-                      }
-                   }
-                    .bottom-content {
-                      margin-top: 30px;  
-                        ul {
-                            padding-left:0px;
+                    .footer {
+                        margin-top: 20px;
+                        .actitudes {
+                            padding-bottom: 10px;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            li {
-                              list-style:none;
+                            .left-content {
+                                font-family: $poppins;
+                                font-size: 16px;
+                                line-height: 26px;
+                                span {
+                                    display: block;
+                                }
+                            }
+                            .right-content {
                                 a {
-                                    background: #9100FF;
+                                    background: #8CC773;
                                     color: #fff;
                                     border-radius: 20px;
                                     padding: 8px 18px;
                                     &:hover {
-                                        background:#5e1198;
+                                        background: #81b56b;
                                     }
                                 }
                             }
-                        }                        
-                    }               
-                }
+                        }
+                        .bottom-content {
+                            margin-top: 30px;
+                            ul {
+                                padding-left: 0px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                li {
+                                    list-style: none;
+                                    a {
+                                        background: #9100FF;
+                                        color: #fff;
+                                        border-radius: 20px;
+                                        padding: 8px 18px;
+                                        font-size: 16px;
+                                        display: block;
+                                        &:hover {
+                                            background: #5e1198;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
-	}
+    }
 }
