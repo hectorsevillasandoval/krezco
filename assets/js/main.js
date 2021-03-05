@@ -75,9 +75,16 @@ window.addEventListener('click', ev => {
 let modal = document.getElementById('kr-modal'),
     callingBtn = '',
     modalTitle = '';
+if (modal) {
+    modal.addEventListener('shown.bs.modal', ev => {
+        callingBtn = ev.relatedTarget;
+        modalTitle = callingBtn.dataset.title;
+        modal.querySelector('.modal-title').innerHTML = modalTitle;
+    })
 
-modal.addEventListener('shown.bs.modal', ev => {
-    callingBtn = ev.relatedTarget;
-    modalTitle = callingBtn.dataset.title;
-    modal.querySelector('.modal-title').innerHTML = modalTitle;
+}
+
+const myCalendar = new TavoCalendar('#my-calendar', {
+    // settings here
+    range_select: true
 })
