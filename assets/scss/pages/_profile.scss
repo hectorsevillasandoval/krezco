@@ -312,7 +312,7 @@
                 height: 138px;
                 background-color: #ccc;
                 border-radius: 10px;
-                margin-top: -30px;                
+                margin-top: -30px;
             }
             &-description {
                 @media #{$desktop} {
@@ -709,6 +709,11 @@
 }
 
 .kr-modal {
+    .modal-dialog {
+        @media #{$desktop} {
+            max-width: 750px;
+        }
+    }
     .modal-content {
         border-radius: 27px;
     }
@@ -739,5 +744,73 @@
         background-color: transparent;
         border: 0;
         color: #646464;
+    }
+    form {
+        label {
+            font-weight: 600;
+        }
+        .form-check-label {
+            font-weight: 400;
+            font-size: 12px;
+        }
+        input {
+            &[type="text"],
+            &[type="password"],
+            &[type="email"],
+            &[type="tel"] {
+                border: 1px solid #BBBBBB;
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+                font-size: 14px;
+                color: $text;
+                padding-right: 40px;
+                @media #{$tablet} {}
+                &:focus {
+                    border-color: darken(#BBBBBB, 50%);
+                    outline: initial;
+                }
+                &+span {
+                    display: block;
+                    position: absolute;
+                    bottom: 16px;
+                    right: 15px;
+                    &:before {
+                        content: "";
+                    }
+                }
+                &:valid {
+                    /*border-color: green;*/
+                    &+span:before {
+                        content: '\f00c';
+                        /*color: green;*/
+                        font-family: $fontawesome;
+                    }
+                }
+                &:invalid {
+                    /*border-color: $red;*/
+                }
+            }
+        }
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            font-family: $poppins;
+            border: 1px solid #BBBBBB;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            color: $text;
+            padding-right: 40px;
+            background-image: url(../images/chevron-down-outline.svg);
+            background-repeat: no-repeat;
+            background-position: right .7rem top 50%;
+            background-size: .85rem auto;
+            &::-ms-expand {
+                display: none;
+            }
+        }
     }
 }

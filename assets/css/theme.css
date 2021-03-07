@@ -20354,6 +20354,11 @@ a {
   opacity: 1;
 }
 
+@media screen and (min-width: 992px) {
+  .kr-modal .modal-dialog {
+    max-width: 750px;
+  }
+}
 .kr-modal .modal-content {
   border-radius: 27px;
 }
@@ -20384,6 +20389,66 @@ a {
   background-color: transparent;
   border: 0;
   color: #646464;
+}
+.kr-modal form label {
+  font-weight: 600;
+}
+.kr-modal form .form-check-label {
+  font-weight: 400;
+  font-size: 12px;
+}
+.kr-modal form input[type=text], .kr-modal form input[type=password], .kr-modal form input[type=email], .kr-modal form input[type=tel] {
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  padding-right: 40px;
+}
+.kr-modal form input[type=text]:focus, .kr-modal form input[type=password]:focus, .kr-modal form input[type=email]:focus, .kr-modal form input[type=tel]:focus {
+  border-color: #3c3c3c;
+  outline: initial;
+}
+.kr-modal form input[type=text] + span, .kr-modal form input[type=password] + span, .kr-modal form input[type=email] + span, .kr-modal form input[type=tel] + span {
+  display: block;
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+}
+.kr-modal form input[type=text] + span:before, .kr-modal form input[type=password] + span:before, .kr-modal form input[type=email] + span:before, .kr-modal form input[type=tel] + span:before {
+  content: "";
+}
+.kr-modal form input[type=text]:valid, .kr-modal form input[type=password]:valid, .kr-modal form input[type=email]:valid, .kr-modal form input[type=tel]:valid {
+  /*border-color: green;*/
+}
+.kr-modal form input[type=text]:valid + span:before, .kr-modal form input[type=password]:valid + span:before, .kr-modal form input[type=email]:valid + span:before, .kr-modal form input[type=tel]:valid + span:before {
+  content: "";
+  /*color: green;*/
+  font-family: "Font Awesome 5 Free";
+}
+.kr-modal form input[type=text]:invalid, .kr-modal form input[type=password]:invalid, .kr-modal form input[type=email]:invalid, .kr-modal form input[type=tel]:invalid {
+  /*border-color: $red;*/
+}
+.kr-modal form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Poppins";
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  padding-right: 40px;
+  background-image: url(../images/chevron-down-outline.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.85rem auto;
+}
+.kr-modal form select::-ms-expand {
+  display: none;
 }
 
 .nuestros-socios .container .title {
