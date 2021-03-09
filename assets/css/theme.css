@@ -19977,15 +19977,10 @@ a {
   background-color: #E8E8E8;
   position: relative;
 }
-.profile__cover-photo.no-cover-image:before {
-  content: "";
+.profile__cover-photo .no-cover-image {
   height: 120px;
   width: 227px;
   display: block;
-  background-image: url(../images/image-regular.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   position: absolute;
   top: 50%;
   left: 50%;
