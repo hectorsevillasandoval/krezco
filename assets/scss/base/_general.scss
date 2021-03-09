@@ -283,3 +283,19 @@ a {
         }
     }
 }
+.slick-dots {
+    li {
+     button {
+      &:before {
+        color: transparent;
+      }  
+    }    
+     &.slick-active {
+       button {
+        &:before {
+          color: transparent;
+        }    
+      }      
+    }        
+  }          
+}
