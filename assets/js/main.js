@@ -84,7 +84,57 @@ if (modal) {
 
 }
 
-const myCalendar = new TavoCalendar('#my-calendar', {
-    // settings here
-    range_select: true
-})
+const calendarElement = document.getElementById("my-calendar");
+if (calendarElement) {
+
+    const myCalendar = new TavoCalendar(calendarElement, {
+        // settings here
+        range_select: true
+    })
+}
+
+function krMobileMenu() {
+    if (document.querySelector("#mmenu") !== null) {
+
+        const menu = new MmenuLight(
+            document.querySelector("#mmenu")
+        );
+
+
+        $title = "Menu"
+
+
+
+        const navigator = menu.navigation({
+            title: $title
+        });
+
+        const drawer = menu.offcanvas();
+        // const closeBtn = document.querySelector('#nav-mobile .close-btn');
+
+
+
+        // closeBtn.addEventListener('click', (event) => {
+        //     event.preventDefault();
+        //     drawer.close();
+        // });
+        document.querySelector('.open-menu')
+            .addEventListener('click', (evnt) => {
+                evnt.preventDefault();
+                drawer.open();
+
+            });
+    }
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+
+        if (document.querySelector("#menu-main-menu") !== null) {
+
+            $("#menu-main-menu a[href^='#']").on("click", function() {
+                $(this).parent().click();
+            });
+        }
+    }
+}
+
+krMobileMenu();

@@ -1,6 +1,15 @@
 .header {
-    @media #{$tablet} {
-        position: absolute;
-        width: 100%;
+    position: absolute;
+    width: 100%;
+    &__logo {
+        img {
+            max-width: 100%;
+        }
+    }
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        font-size: 28px;
     }
 }
