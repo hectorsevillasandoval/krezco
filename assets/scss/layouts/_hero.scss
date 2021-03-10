@@ -23,7 +23,7 @@
             position: relative;
             @media #{$desktop-large} {
                 flex-direction: row;
-                height: 480px;
+                height: 630px;
             }
             @media #{$desktop-xl} {
                 flex-direction: row;
@@ -55,7 +55,7 @@
                 max-width: 50%;
             }
             @media #{$desktop-xl} {
-                max-width: 100%;
+                max-width: 60%;
             }
         }
         @media #{$desktop-large} {
@@ -109,7 +109,7 @@
     .slick-dots {
         bottom: 15px;
         @media #{$desktop-xl} {
-            bottom: 170px;
+            bottom: 20px;
         }
     }
     .slick-active {
