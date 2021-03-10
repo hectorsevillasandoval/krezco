@@ -15,13 +15,31 @@
 
 <body>
 
+    <div id="mobile-menu">
+        <div id="mmenu">
+            <ul>
+                <li class="header__menuItem"><a href="">Candidatos/as</a></li>
+                <li class="header__menuItem"><a href="">Empresas</a></li>
+                <li class="header__menuItem"><a href="">Formación</a></li>
+                <li class="header__menuItem"><a href="">Sobre Nosotros</a></li>
+                <li class="header__menuItem"><a href=""><i class="fas fa-user"></i>Acceso</a></li>
+                <li class="header__menuItem"><a href="">¡Te Ayudamos!</a></li>
+            </ul>
+
+        </div>
+    </div>
+
     <header class="header">
         <div class="header__container container">
             <div class="row align-items-center">
                 <div class="col-9 col-md-4 col-lg-3 header__logo">
-                    <div class="header__logoImage temp-logo">Krezco</div>
+                    <img src="assets/images/logo-krezco.svg" alt="Logo Krezco">
+
                 </div>
-                <div class="col-3 col-md-8 col-lg-9 header__menu">
+                <div class="col-3 col-md-8 d-lg-none mobile-menu justify-content-end d-flex">
+                    <button class="open-menu"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="col-3 col-md-8 col-lg-9 header__menu d-none d-lg-block">
                     <ul>
                         <li class="header__menuItem"><a href="">Candidatos/as</a></li>
                         <li class="header__menuItem"><a href="">Empresas</a></li>
@@ -39,42 +57,26 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-10 px-0">
+                <div class="col-sm-12 px-0">
                     <!-- Slider Wrapper -->
                     <div class="hero__wrapper hero__js">
                         <div class="hero__item">
                             <div class="hero__itemWrapper">
                                 <div class="hero__left">
-                                    <div class="hero__title">KREZCO</div>
+                                    <div class="hero__title">Conecta, Enseña y Desarrolla</div>
                                     <div class="hero__content">
                                         El punto de encuentro entre talento local, empresas de prestigio y centros de formación profesional
                                     </div>
                                 </div>
                                 <div class="hero__right">
                                     <div class="hero__image">
-                                        <img src="assets/images/model003.png" alt="" srcset="">
+                                        <img src="assets/images/model006.png" alt="" srcset="">
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- ITEM 2 -->
-                        <div class="hero__item">
-                            <div class="hero__itemWrapper">
-                                <div class="hero__left">
-                                    <div class="hero__title">KREZCO 2</div>
-                                    <div class="hero__content">
-                                        El punto de encuentro entre talento local, empresas de prestigio y centros de formación profesional
-                                    </div>
-                                </div>
-                                <div class="hero__right">
-                                    <div class="hero__image">
-                                        <img src="assets/images/model002.png" alt="" srcset="">
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
                     </div>
                     <!-- Slider Wrapper END -->
                 </div>
@@ -85,293 +87,296 @@
 
     <!-- socios -->
     <section class="socios">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-              <span class="title">SOCIOS</span>
-          </div>  
-          <div class="col">
-              <img src="assets/images/canada-color.png">
-          </div>  
-          <div class="col">
-              <img src="assets/images/children_believe_logo-color.png">
-          </div>  
-          <div class="col">
-              <img src="assets/images/cep-color.png">
-          </div>  
-          <div class="col">
-              <img src="assets/images/heifer-color.png">
-          </div>  
-        </div>    
-      </div>
-    </section> 
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <span class="title">SOCIOS</span>
+                </div>
+                <div class="col">
+                    <img src="assets/images/canada-color.png">
+                </div>
+                <div class="col">
+                    <img src="assets/images/children_believe_logo-color.png">
+                </div>
+                <div class="col">
+                    <img src="assets/images/cep-color.png">
+                </div>
+                <div class="col">
+                    <img src="assets/images/heifer-color.png">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- socios -->
 
     <!-- Comunidad -->
     <section class="comunidad empresa">
-      <div class="container">
-        <div class="title">Creamos el espacio para que <span>enseñes lo que te apasiona.</span></div>
-        <div class="sub-title">Te conectamos con la juventud para desarrollar y construir un fuerza laboral competitiva que <span>permita mejorar su calidad de vida.</span></div>
+        <div class="container">
+            <div class="title">Creamos el espacio para que <span>enseñes lo que te apasiona.</span></div>
+            <div class="sub-title">Te conectamos con la juventud para desarrollar y construir un fuerza laboral competitiva que <span>permita mejorar su calidad de vida.</span></div>
 
-        <div class="sub-title">Construimos un programa de reconocimiento basado en insignias y diplomas promoviendo una <span>experiencia dinámica y transformadora facilitando el proceso de aprendizaje.</span></div>
+            <div class="sub-title">Construimos un programa de reconocimiento basado en insignias y diplomas promoviendo una <span>experiencia dinámica y transformadora facilitando el proceso de aprendizaje.</span></div>
 
-        <div class="row justify-content-center mt-5">  
+            <div class="row justify-content-center mt-5">
 
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
-            <div class="wrapper">
-              <img src="assets/images/programas_de_formación.svg">
-              <h3>Publica tus cursos, becas, <span>capacitaciones y programas</span> de formación</h3>              
-            </div>           
-          </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
+                    <div class="wrapper">
+                        <img src="assets/images/programas_de_formación.svg">
+                        <h3>Publica tus cursos, becas, <span>capacitaciones y programas</span> de formación</h3>
+                    </div>
+                </div>
 
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
-            <div class="wrapper">
-              <img src="assets/images/contenido_relevante.svg">
-              <h3>Desarrolla y comparte <span>contenido relevante</span></h3>              
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
+                    <div class="wrapper">
+                        <img src="assets/images/contenido_relevante.svg">
+                        <h3>Desarrolla y comparte <span>contenido relevante</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
+                    <div class="wrapper">
+                        <img src="assets/images/comunidad.svg">
+                        <h3>Forma grupos de interés e <span>interactúa con tu</span> comunidad</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
+                    <div class="wrapper">
+                        <img src="assets/images/propios_eventos.svg">
+                        <h3>Crea tus propios eventos</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
+                    <div class="wrapper">
+                        <img src="assets/images/red.svg">
+                        <h3>Establece una comunicación <span>directa con tu red.</span></h3>
+                    </div>
+                </div>
+
             </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
-            <div class="wrapper">
-              <img src="assets/images/comunidad.svg">
-              <h3>Forma grupos de interés e <span>interactúa con tu</span> comunidad</h3>              
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
-            <div class="wrapper">
-              <img src="assets/images/propios_eventos.svg">
-              <h3>Crea tus propios eventos</h3>              
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 kr-box">
-            <div class="wrapper">
-              <img src="assets/images/red.svg">
-              <h3>Establece una comunicación <span>directa con tu red.</span></h3>              
-            </div>
-          </div>
 
         </div>
-
-      </div>    
     </section>
     <!-- Comunidad -->
 
-   
+
     <!-- Casos de estudio -->
     <section class="casos-estudios">
-    <div class="container">
-    <div class="title">Caso de Estudio</div>
-    <div class="row">
-        <div class="col-md-12">
-            <div id="testimonial-slider-2" class="owl-carousel">
-                <div class="testimonials">
-                    <div class="testimonial-content">
-                        <img src="assets/images/Logo-IMPULSANDOME-FOOTER.png">
-                        <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
-                        <p>    
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        
-                        <h3 class="testimonial-title">Roberto Gomez</h3>
-                        </div>
-                    </div>
-                    <div class="pic">
-                        <img src="assets/images/bg-testimonial.png" alt="">
-                    </div>
-                    
-                </div>
- 
-                <div class="testimonials">
-                    <div class="testimonial-content">
-                        <img src="assets/images/Logo-IMPULSANDOME-FOOTER.png">
-                        <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
-                        <p>    
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        
-                        <h3 class="testimonial-title">Roberto Gomez</h3>
-                        </div>
-                    </div>
-                    <div class="pic">
-                        <img src="assets/images/bg-testimonial2.png" alt="">
-                    </div>
-                    
-                  </div>
+        <div class="container">
+            <div class="title">Caso de Estudio</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-slider-2" class="owl-carousel">
+                        <div class="testimonials">
+                            <div class="testimonial-content">
+                                <img src="assets/images/Logo-IMPULSANDOME-FOOTER.png">
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.</p>
 
-                  </div>
-              </div>
-          </div>
-       </div>
+                                    <h3 class="testimonial-title">Roberto Gomez</h3>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img src="assets/images/bg-testimonial.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials">
+                            <div class="testimonial-content">
+                                <img src="assets/images/Logo-IMPULSANDOME-FOOTER.png">
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.</p>
+
+                                    <h3 class="testimonial-title">Roberto Gomez</h3>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <img src="assets/images/bg-testimonial2.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Casos de estudio -->
 
     <!-- aliados -->
     <section class="aliados empresa">
-      <div class="container">
-        <div class="title">Nuestros Aliados</div>
-          <div class="row">
-            <div id="owl-aliados">
-              
-              <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
-              <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
-             
+        <div class="container">
+            <div class="title">Nuestros Aliados</div>
+            <div class="row">
+                <div id="owl-aliados">
+
+                    <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/flor-de-cana-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/GBM.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/Nestle-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/cargill-logo.png" alt="Owl Image"></div>
+                    <div class="item"><img src="assets/images/cafe-las-flores-logo.png" alt="Owl Image"></div>
+
+                </div>
             </div>
-          </div>  
-      </div> 
+        </div>
     </section>
     <!-- aliados -->
 
     <!-- ultimas publicaciones -->
     <section class="news">
-      <div class="container">
-        <div class="title">Últimas publicaciones</div>
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="assets/images/Blog-1.png">
-            <span>10 de Octubre, 2020</span>
-            <h2>Guía para preparar una Entrevista de Trabajo</h2>
-            <p>Prepara tu próxima entrevista, utiliza nuestra guía e informate de qué preguntas te pueden hacer y cómo responderlas, qué no debes decir, cómo explicar tus áreas a mejorar, qué preguntas puedes hacer, entre otros.</p>
-            <a href="#">Leer más</a>
-          </div>
+        <div class="container">
+            <div class="title">Últimas publicaciones</div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="assets/images/Blog-1.png">
+                    <span>10 de Octubre, 2020</span>
+                    <h2>Guía para preparar una Entrevista de Trabajo</h2>
+                    <p>Prepara tu próxima entrevista, utiliza nuestra guía e informate de qué preguntas te pueden hacer y cómo responderlas, qué no debes decir, cómo explicar tus áreas a mejorar, qué preguntas puedes hacer, entre otros.</p>
+                    <a href="#">Leer más</a>
+                </div>
 
-          <div class="col-sm-4">
-            <img src="assets/images/Blog-2.png">
-            <span>09 de Octubre, 2020</span>
-            <h2>Lista de control de <span>diversidad e inclusión</span></h2>
-            <p>La diversidad y la inclusión se mencionan a menudo en la misma frase, porque una organización inclusiva no puede existir sin uan fuerza de trabajo diversa. Y una organización debe ser inclusiva a fin de mantener su personal diverso.</p>
-            <a href="#">Leer más</a>
-          </div>
+                <div class="col-sm-4">
+                    <img src="assets/images/Blog-2.png">
+                    <span>09 de Octubre, 2020</span>
+                    <h2>Lista de control de <span>diversidad e inclusión</span></h2>
+                    <p>La diversidad y la inclusión se mencionan a menudo en la misma frase, porque una organización inclusiva no puede existir sin uan fuerza de trabajo diversa. Y una organización debe ser inclusiva a fin de mantener su personal diverso.</p>
+                    <a href="#">Leer más</a>
+                </div>
 
-          <div class="col-sm-4">
-            <img src="assets/images/Blog-3.png">
-            <span>12 de Octubre, 2020</span>
-            <h2>Diseña tu plan de carrera</h2>
-            <p>El plan de carrera es una estrategia empresarial para conseguir talento valioso para las compañias. Te damos a conocer los secretos de esta táctica para poder ponerla en práctica.</p>
-            <a href="#">Leer más</a>
-          </div>
+                <div class="col-sm-4">
+                    <img src="assets/images/Blog-3.png">
+                    <span>12 de Octubre, 2020</span>
+                    <h2>Diseña tu plan de carrera</h2>
+                    <p>El plan de carrera es una estrategia empresarial para conseguir talento valioso para las compañias. Te damos a conocer los secretos de esta táctica para poder ponerla en práctica.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- ultimas publicaciones -->
 
-<!-- footer -->
-<section class="footer">
+    <!-- footer -->
+    <section class="footer">
 
-    <!-- footer bottom -->
-    <div class="footer-bottom">
-      <div class="container">  
-        <div class="row">
-
-          <div class="col social-media">
-            <div class="title">Krezco</div>
-                <ul>
-                    <li class="facebook">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>   
-                    <li class="twitter">              
-                      <a target="_blank" href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="linkedin">              
-                      <a target="_blank" href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="youtube">              
-                      <a target="_blank" href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>            
-          </div>
-
-          <div class="col">
-            <div class="title">Conoce más</div>
-            <ul>
-                <li><a href="#">Encuentra Vacantes</a></li>
-                <li><a href="#">Impulsandome</a></li>
-                <li><a href="#">Compañias</a></li>
-                <li><a href="#">Misión</a></li>
-                <li><a href="#">Publica un trabajo</a></li>
-                <li><a href="#">Encuentra un candidato</a></li>
-                <li><a href="#">Cursos y capacitaciones</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-            </ul>
-          </div>
-
-          <div class="col publicaciones">
-              <div class="title">Últimas publicaciones</div>
-                <div class="row mb-4">
-                  <div class="col-4 left-side">
-                    <img src="./assets/images/Blog-1.png" alt="Download Our Insurance Secrets FREE eBook">
-                  </div>
-                  <div class="col-8 right-side">
-                    <div class="sub-title"><span>10 octubre. 2020</span>
-                        Guia para preparar una Entrevista de trabajo                      
-                    </div>                                  
-                  </div>
-                </div>  
+        <!-- footer bottom -->
+        <div class="footer-bottom">
+            <div class="container">
                 <div class="row">
-                  <div class="col-4 left-side">
-                    <img src="./assets/images/Blog-2.png" alt="Download Our Insurance Secrets FREE eBook">
-                  </div>
-                  <div class="col-8 right-side">
-                    <div class="sub-title"><span>9 octubre. 2020</span>
-                        Lista de control de <br />diversidad e inclusión                    
-                    </div>                                  
-                  </div>
-                </div>  
-          </div>
-          <div class="col cuidades">
-            <div class="title">Cuidades</div>
-            <ul>
-                <li><a href="#">Managua</a></li>
-                <li><a href="#">Masaya</a></li>
-                <li><a href="#">Granada</a></li>
-                <li><a href="#">Isla de Ometepe</a></li> 
 
-                <li><a href="#">Matagalpa</a></li>
-                <li><a href="#">Boaco</a></li>
-                <li><a href="#">Chinandega</a></li>
-                <li><a href="#">Estelí</a></li>
-                <li><a href="#">Rivas</a></li>
-            </ul>
-          </div>
+                    <div class="col social-media">
+                        <div class="title">Krezco</div>
+                        <ul>
+                            <li class="facebook">
+                                <a target="_blank" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a target="_blank" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="linkedin">
+                                <a target="_blank" href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="youtube">
+                                <a target="_blank" href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="col">
+                        <div class="title">Conoce más</div>
+                        <ul>
+                            <li><a href="#">Encuentra Vacantes</a></li>
+                            <li><a href="#">Impulsandome</a></li>
+                            <li><a href="#">Compañias</a></li>
+                            <li><a href="#">Misión</a></li>
+                            <li><a href="#">Publica un trabajo</a></li>
+                            <li><a href="#">Encuentra un candidato</a></li>
+                            <li><a href="#">Cursos y capacitaciones</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col publicaciones">
+                        <div class="title">Últimas publicaciones</div>
+                        <div class="row mb-4">
+                            <div class="col-4 left-side">
+                                <img src="./assets/images/Blog-1.png" alt="Download Our Insurance Secrets FREE eBook">
+                            </div>
+                            <div class="col-8 right-side">
+                                <div class="sub-title"><span>10 octubre. 2020</span> Guia para preparar una Entrevista de trabajo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 left-side">
+                                <img src="./assets/images/Blog-2.png" alt="Download Our Insurance Secrets FREE eBook">
+                            </div>
+                            <div class="col-8 right-side">
+                                <div class="sub-title"><span>9 octubre. 2020</span> Lista de control de <br />diversidad e inclusión
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col cuidades">
+                        <div class="title">Cuidades</div>
+                        <ul>
+                            <li><a href="#">Managua</a></li>
+                            <li><a href="#">Masaya</a></li>
+                            <li><a href="#">Granada</a></li>
+                            <li><a href="#">Isla de Ometepe</a></li>
+
+                            <li><a href="#">Matagalpa</a></li>
+                            <li><a href="#">Boaco</a></li>
+                            <li><a href="#">Chinandega</a></li>
+                            <li><a href="#">Estelí</a></li>
+                            <li><a href="#">Rivas</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>  
-    </div>    
-    <!-- footer bottom -->
+        <!-- footer bottom -->
 
-    <!-- copyright footer -->
-    <div class="copyright-footer">
-      <p>© 2020 KREZCO. Todos los derechos reservados</p>
-    </div>
-    <!-- copyright footer -->
+        <!-- copyright footer -->
+        <div class="copyright-footer">
+            <p>© 2020 KREZCO. Todos los derechos reservados</p>
+        </div>
+        <!-- copyright footer -->
 
-</section>
-<!-- footer -->
+    </section>
+    <!-- footer -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    
+
     <script src="assets/js/vendors/slick.min.js"></script>
+    <script src="assets/js/vendors/mmenu-light.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
