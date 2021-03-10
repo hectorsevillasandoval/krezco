@@ -19038,7 +19038,7 @@ a {
 }
 @media screen and (min-width: 1440px) {
   .hero__image img {
-    max-width: 100%;
+    max-width: 60%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -19099,7 +19099,7 @@ a {
 }
 @media screen and (min-width: 1440px) {
   .hero .slick-dots {
-    bottom: 170px;
+    bottom: 20px;
   }
 }
 .hero .slick-active .hero__left {
