@@ -17797,11 +17797,23 @@ a {
   animation: shake 0.5s linear 1;
 }
 
+.rotate {
+  animation: rotation 20s infinite linear;
+}
+
 .fadeInUpSD {
   -webkit-animation-name: fadeInUpSD;
   animation-name: fadeInUpSD;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -18989,6 +19001,16 @@ a {
 .hero__wrapper {
   margin-top: 120px;
   margin-bottom: 0 !important;
+}
+.hero__gear {
+  position: absolute;
+  right: -50px;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .hero__gear {
+    display: block;
+  }
 }
 .hero__itemWrapper {
   display: flex;
