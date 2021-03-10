@@ -19000,7 +19000,7 @@ a {
 @media screen and (min-width: 1200px) {
   .hero__itemWrapper {
     flex-direction: row;
-    height: 480px;
+    height: 630px;
   }
 }
 @media screen and (min-width: 1440px) {
