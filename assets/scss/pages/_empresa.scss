@@ -8,6 +8,7 @@
 			margin-top: 60px !important;
 			}
 			.kr-box {
+			  display: initial;
 				.wrapper {
 					padding-top: 50px;
 					height: 325px;
@@ -54,6 +55,9 @@
     background-size: contain;
     padding-top: 35px;
     padding-bottom: 35px;
+    @media screen and (max-width: 1199px) { 
+    	align-items: center;
+    }
     &:before {
 	   /* content: "";
 	    width: 320px;
@@ -175,6 +179,13 @@
     .testimonials{
         padding: 80px 0 80px 265px;
     }
+    .casos-estudios {
+      .container { 
+        .testimonials {
+     	  padding: 80px 0 80px 0px;
+        }	
+      }  	
+    }    	
 }
 @media only screen and (max-width: 767px){
     .testimonials{

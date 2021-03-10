@@ -19556,6 +19556,11 @@ a {
 .experiencia .container .title span {
   display: block;
 }
+@media screen and (max-width: 1199px) {
+  .experiencia .container .title span {
+    display: initial;
+  }
+}
 .experiencia .container .row p {
   margin-top: 20px;
   font-family: "Poppins";
@@ -19921,6 +19926,9 @@ a {
 .comunidad.empresa .container .mt-5 {
   margin-top: 60px !important;
 }
+.comunidad.empresa .container .kr-box {
+  display: initial;
+}
 .comunidad.empresa .container .kr-box .wrapper {
   padding-top: 50px;
   height: 325px;
@@ -19958,6 +19966,11 @@ a {
   background-size: contain;
   padding-top: 35px;
   padding-bottom: 35px;
+}
+@media screen and (max-width: 1199px) {
+  .casos-estudios .container .testimonials {
+    align-items: center;
+  }
 }
 .casos-estudios .container .testimonials:before {
   /* content: "";
@@ -20069,6 +20082,10 @@ a {
 @media only screen and (max-width: 990px) {
   .testimonials {
     padding: 80px 0 80px 265px;
+  }
+
+  .casos-estudios .container .testimonials {
+    padding: 80px 0 80px 0px;
   }
 }
 @media only screen and (max-width: 767px) {
