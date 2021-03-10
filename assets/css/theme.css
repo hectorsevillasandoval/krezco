@@ -18483,6 +18483,7 @@ a {
 .header {
   position: absolute;
   width: 100%;
+  z-index: 9;
 }
 .header__logo img {
   max-width: 100%;
@@ -19556,11 +19557,33 @@ a {
 .socios .container .row {
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .socios .container .row {
+    display: block;
+  }
+}
 .socios .container .row .col {
   border-left: 1px solid #eaeaea;
+  margin-bottom: 22px;
+  text-align: center;
 }
 .socios .container .row .col:first-child {
   border: 0px;
+}
+@media screen and (max-width: 1399px) {
+  .socios .container .row .col:nth-child(5) {
+    border: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .socios .container .row .col:nth-child(4) {
+    border: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .socios .container .row .col {
+    border: 0px;
+  }
 }
 .socios .container .row .col .title {
   font-size: 16px;
@@ -19608,6 +19631,11 @@ a {
   bottom: 0px;
   left: 0px;
 }
+@media screen and (max-width: 767px) {
+  .comunidad:before {
+    display: none;
+  }
+}
 .comunidad .container .title {
   font-family: "Work Sans";
   font-weight: bold;
@@ -19616,8 +19644,18 @@ a {
   letter-spacing: 0px;
   color: #0A0A0A;
 }
+@media screen and (max-width: 1199px) {
+  .comunidad .container .title {
+    font-size: 32px;
+  }
+}
 .comunidad .container .title span {
   display: block;
+}
+@media screen and (max-width: 1199px) {
+  .comunidad .container .title span {
+    display: initial;
+  }
 }
 .comunidad .container .sub-title {
   text-align: center;
@@ -19633,6 +19671,7 @@ a {
 }
 .comunidad .container .kr-box {
   margin-bottom: 40px;
+  display: flex;
 }
 .comunidad .container .kr-box .wrapper {
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -19641,8 +19680,8 @@ a {
   border-radius: 35px;
   padding: 20px;
   text-align: center;
-  height: 325px;
-  overflow: hidden;
+  /*height: 325px;
+  overflow: hidden;*/
 }
 .comunidad .container .kr-box .wrapper h3, .comunidad .container .kr-box .wrapper .h3 {
   margin-top: 20px;
@@ -19653,8 +19692,18 @@ a {
   letter-spacing: 0px;
   color: #0A0A0A;
 }
+@media screen and (max-width: 1199px) {
+  .comunidad .container .kr-box .wrapper h3, .comunidad .container .kr-box .wrapper .h3 {
+    font-size: 22px;
+  }
+}
 .comunidad .container .kr-box .wrapper h3 span, .comunidad .container .kr-box .wrapper .h3 span {
   display: block;
+}
+@media screen and (max-width: 1439px) {
+  .comunidad .container .kr-box .wrapper h3 span, .comunidad .container .kr-box .wrapper .h3 span {
+    display: initial;
+  }
 }
 .comunidad .container .kr-box .wrapper p {
   margin-top: 10px;
@@ -19664,6 +19713,11 @@ a {
   position: absolute;
   bottom: 0px;
   right: 0px;
+}
+@media screen and (max-width: 767px) {
+  .comunidad:after {
+    display: none;
+  }
 }
 
 .mision {
@@ -19675,10 +19729,40 @@ a {
   border-radius: 80px;
   position: relative;
 }
+@media screen and (max-width: 1199px) {
+  .mision .container .bg-box {
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mision .container .bg-box .col-md-6 {
+    width: 100%;
+  }
+}
+.mision .container .bg-box .one-half img {
+  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .mision .container .bg-box .one-half img {
+    display: block;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mision .container .bg-box .one-half {
+    display: none;
+  }
+}
 .mision .container .bg-box .content {
   padding-top: 60px;
   padding-right: 85px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 1399px) {
+  .mision .container .bg-box .content {
+    padding-right: 45px;
+    padding-left: 35px;
+  }
 }
 .mision .container .bg-box .content .title {
   margin-top: 20px;
@@ -19709,12 +19793,22 @@ a {
 .mision .container .bg-box .content blockquote span {
   display: block;
 }
+@media screen and (max-width: 1439px) {
+  .mision .container .bg-box .content blockquote span {
+    display: initial;
+  }
+}
 .mision .container .bg-box:after {
   content: url(../images/mision-img.png);
   display: block;
   position: absolute;
   bottom: -6px;
   left: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .mision .container .bg-box:after {
+    display: none;
+  }
 }
 
 /* Aliados */
@@ -20743,9 +20837,12 @@ a {
 }
 .kr-modal .modal-content {
   border-radius: 27px;
+  padding: 35px 50px;
 }
 .kr-modal .modal-header {
   border-bottom: 0;
+  padding-left: initial;
+  padding-right: initial;
 }
 .kr-modal .modal-footer {
   justify-content: center;
@@ -20766,6 +20863,7 @@ a {
   letter-spacing: 0px;
   color: #646464;
   opacity: 1;
+  margin-bottom: 15px;
 }
 .kr-modal .close {
   background-color: transparent;
@@ -20774,10 +20872,44 @@ a {
 }
 .kr-modal form label {
   font-weight: 600;
+  padding-left: 0px;
 }
 .kr-modal form .form-check-label {
   font-weight: 400;
   font-size: 12px;
+}
+.kr-modal form textarea {
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  padding-right: 40px;
+}
+.kr-modal form textarea:focus {
+  border-color: #3c3c3c;
+  outline: initial;
+}
+.kr-modal form textarea + span {
+  display: block;
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+}
+.kr-modal form textarea + span:before {
+  content: "";
+}
+.kr-modal form textarea:valid {
+  /*border-color: green;*/
+}
+.kr-modal form textarea:valid + span:before {
+  content: "";
+  /*color: green;*/
+  font-family: "Font Awesome 5 Free";
+}
+.kr-modal form textarea:invalid {
+  /*border-color: $red;*/
 }
 .kr-modal form input[type=text], .kr-modal form input[type=password], .kr-modal form input[type=email], .kr-modal form input[type=tel] {
   border: 1px solid #BBBBBB;
@@ -20999,6 +21131,7 @@ a {
 .contactenos {
   padding-top: 80px;
   padding-bottom: 30px;
+  margin-bottom: 80px;
 }
 .contactenos .container .title {
   padding-bottom: 40px;
