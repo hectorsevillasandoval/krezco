@@ -18969,11 +18969,21 @@ a {
 }
 
 .hero {
-  min-height: 800px;
   background-color: #5A0D7E;
   background-image: url(../images/background-temp.jpg);
   margin-bottom: 100px;
   border-radius: 0px 0px 200px 200px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-height: 800px;
+  }
 }
 .hero__wrapper {
   margin-top: 120px;
@@ -18984,34 +18994,53 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__itemWrapper {
     flex-direction: row;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__itemWrapper {
+    flex-direction: row;
+    height: initial;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__left {
-    width: 50%;
+    max-width: 750px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__right {
-    width: 50%;
+    width: 40%;
   }
 }
 .hero__image {
-  position: relative;
+  position: static;
 }
 .hero__image img {
   object-fit: contain;
-  position: absolute;
   bottom: 0;
-  left: 0;
+  left: initial;
   max-width: 100%;
   right: 0;
+  z-index: -9;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .hero__image img {
+    position: absolute;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__image img {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero__image {
     height: 680px;
     width: 510px;
@@ -19027,37 +19056,62 @@ a {
   font-size: 40px;
   font-weight: bold;
   font-family: "Work Sans";
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 60px;
+    font-size: 54px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-size: 76px;
+    font-size: 66px;
+    text-align: left;
   }
 }
 .hero__content {
   color: white;
   font-family: "Poppins";
   font-size: 19px;
-  line-height: 40px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: normal;
+  z-index: 99;
+  text-align: center;
 }
 @media screen and (min-width: 992px) {
   .hero__content {
     font-size: 21px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    margin-left: 0;
+    text-align: left;
+  }
+}
 .hero .slick-dots {
-  bottom: 170px;
+  bottom: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .hero .slick-dots {
+    bottom: 170px;
+  }
 }
 .hero .slick-active .hero__left {
   animation-name: fadeInUpSD;
   animation-duration: 1s;
   opacity: 1;
   width: 100%;
-  padding: 10px 20px 30px 0;
+  padding: 10px 20px 30px 10px;
+}
+@media screen and (min-width: 1440px) {
+  .hero .slick-active .hero__left {
+    padding-left: 0;
+  }
 }
 
 .nosotros {
