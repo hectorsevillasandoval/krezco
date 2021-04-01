@@ -2,9 +2,22 @@
     animation: shake 0.5s linear 1;
 }
 
+.rotate {
+    animation: rotation 20s infinite linear;
+}
+
 .fadeInUpSD {
     -webkit-animation-name: fadeInUpSD;
     animation-name: fadeInUpSD;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 @keyframes shake {
