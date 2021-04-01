@@ -19012,6 +19012,9 @@ a {
     display: block;
   }
 }
+.hero__item {
+  outline: none;
+}
 .hero__itemWrapper {
   display: flex;
   flex-direction: column;

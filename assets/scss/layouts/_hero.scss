@@ -23,6 +23,7 @@
         }
     }
     &__item {
+        outline: none;
         &Wrapper {
             display: flex;
             flex-direction: column;
