@@ -119,6 +119,9 @@
             margin-bottom: 40px;
             span {
                 display: block;
+                @media screen and (max-width: 1199px) {
+                    display: initial;
+                }
             }
         }
         .row {

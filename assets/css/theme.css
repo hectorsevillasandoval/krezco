@@ -18892,6 +18892,16 @@ a {
 .form input[type=text]:invalid, .form input[type=password]:invalid, .form input[type=email]:invalid, .form input[type=tel]:invalid {
   /*border-color: $red;*/
 }
+.form textarea {
+  margin: 10px 0 0 0;
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  padding: 15px 40px 15px 15px;
+}
 .form select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -19517,6 +19527,57 @@ a {
   margin-right: auto;
   margin-bottom: 25px;
 }
+.login .logo.v2 {
+  max-width: 100%;
+}
+.login .perfil-row {
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 20px;
+}
+.login .perfil-row .title {
+  color: #646464;
+  font-family: "Work Sans";
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.login .perfil-row p {
+  text-align: center;
+}
+.login .file-row {
+  margin-bottom: 25px;
+}
+.login .file-row .file {
+  position: relative;
+  overflow: hidden;
+  background: #7821a0;
+  color: #fff;
+  text-align: center;
+  height: 45px;
+  border-radius: 5px;
+  line-height: 42px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login .file-row .file input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.login .file-row .file.gray {
+  background: #D5D5D5;
+}
+.login .file-row small.green, .login .file-row .green.small {
+  font-size: 13px;
+  color: #008000;
+}
+.login .file-row small.red, .login .file-row .red.small {
+  font-size: 13px;
+  color: #ff0000;
+}
 
 .temp-logo {
   font-size: 61px;
@@ -19634,6 +19695,11 @@ a {
 }
 .experiencia .container .title span {
   display: block;
+}
+@media screen and (max-width: 1199px) {
+  .experiencia .container .title span {
+    display: initial;
+  }
 }
 .experiencia .container .row p {
   margin-top: 20px;
@@ -20000,6 +20066,9 @@ a {
 .comunidad.empresa .container .mt-5 {
   margin-top: 60px !important;
 }
+.comunidad.empresa .container .kr-box {
+  display: initial;
+}
 .comunidad.empresa .container .kr-box .wrapper {
   padding-top: 50px;
   height: 325px;
@@ -20037,6 +20106,11 @@ a {
   background-size: contain;
   padding-top: 35px;
   padding-bottom: 35px;
+}
+@media screen and (max-width: 1199px) {
+  .casos-estudios .container .testimonials {
+    align-items: center;
+  }
 }
 .casos-estudios .container .testimonials:before {
   /* content: "";
@@ -20148,6 +20222,10 @@ a {
 @media only screen and (max-width: 990px) {
   .testimonials {
     padding: 80px 0 80px 265px;
+  }
+
+  .casos-estudios .container .testimonials {
+    padding: 80px 0 80px 0px;
   }
 }
 @media only screen and (max-width: 767px) {

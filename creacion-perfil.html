@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 align-div--middle">
+                    <div class="login__content-wrapper">
+                        <div class="logo v2"><img src="assets/images/logo-krezco.svg" alt="Logo Krezco"></div>
+                        <div class="form form--login form--white form--bordered">
+                            <form action="">
+                                <div class="form__wrapper">
+                                    <!-- Starting form row -->
+                                    <div class="form__row perfil-row">
+                                        <div class="title">Perfil</div>
+                                        <p>Formulario de Pruena de creación de perfil</p>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row row file-row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="name">Imagen banner</label>
+                                            <div class="file">
+                                                <i class="fas fa-images"></i> Elegir archivo
+                                                <input type="file" name="file"/>
+                                            </div>
+                                            <small class="green">Archivo Seleccionado</small>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="name">Imagen banner</label>
+                                            <div class="file gray">
+                                                <i class="fas fa-images"></i> Elegir archivo
+                                                <input type="file" name="file"/>
+                                            </div>
+                                            <small class="red">No se ha seleccionado archivo</small>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="name">Nombres</label>
+                                        <input type="text" name="name" id="name" required>
+                                        <span class="form__validation"></span>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="apellidos">Apellidos</label>
+                                        <input type="text" name="apellidos" id="apellidos" required>
+                                        <span class="form__validation"></span>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="genero">Genero</label>
+                                        <select name="perfil" id="rol">
+                                                <option value="candidato">Masculino</option>
+                                                <option value="empresa">Femenino</option>
+                                            </select>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="nacimiento">Fecha de Nacimiento</label>
+                                            <input type="text" name="nacimiento" id="nacimiento" required>
+                                            <span class="form__validation"></span>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="ubicacion">Ubicacion</label>
+                                            <input type="text" name="ubicacion" id="ubicacion" required>
+                                            <span class="form__validation"></span>
+                                        </div>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <label for="genero">Acerca de mi</label>
+                                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                    <!-- Starting form row -->
+                                    <div class="form__row">
+                                        <button type="submit" class="btn btn--gradient btn__icon btn__icon--door"><i class="fas fa-paper-plane"></i> Enviar</button>
+                                    </div>
+                                    <!-- End Form Row -->
+
+                                   
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="regular-content text-color--white text-center pt-4">
+                            ¿Aún no tienes una cuenta? <a href="/register" class="link-color--purple">Forma parte de la comunidad KREZCO</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
