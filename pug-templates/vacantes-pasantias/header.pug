@@ -1,0 +1,43 @@
+header.header
+    .header__container.container
+        .row.align-items-center
+            div(class="col-9 col-md-4 col-lg-2 header__logo header__logo--color")
+            div(class="col-3 col-md-8 col-lg-8 header__menu")
+                ul(class="list list--icons")
+                    li
+                        a(href="#")
+                            i.fas.fa-home
+                            span Inicio
+                    li
+                        a(href="#")
+                            img(src="assets/images/aliados.svg", alt="Nuestros Aliados Icon")
+                            span Nuestros Aliados
+                    li
+                        a(href="#")
+                            img(src="assets/images/conecta.svg", alt="Conecta icon")
+                            span Conecta
+                    li
+                        a(href="#")
+                            img(src="assets/images/empleos.svg", alt="Empleos icon")
+                            span Empleos
+                    li
+                        a(href="#")
+                            img(src="assets/images/formacion-profesional.svg", alt="Formación Profesional icon")
+                            span Formación Profesional
+                    li
+                        a(href="#")
+                            img(src="assets/images/mensajes.svg", alt="Mensajes icon")
+                            span Mensajes
+                    li
+                        a(href="#")
+                            img(src="assets/images/notifications.svg", alt="Notificaciones icon")
+                            span Notificaciones
+            div(class="col-lg-2")
+                div(class="dropdown dropdown__profile")
+                    button(class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        img(src="assets/images/user.png", alt="Profile Icon")
+                    div(class="dropdown-menu" aria-labelledby="dropdownMenuButton")
+                        a.dropdown-item(href="#") Ver Perfil
+                        a.dropdown-item(href="#") Configuración y Privacidad
+                        a.dropdown-item(href="#") Ayuda
+                        a.dropdown-item(href="#") Cerrar Sesión

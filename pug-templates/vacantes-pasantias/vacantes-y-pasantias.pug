@@ -1,0 +1,27 @@
+doctype doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Vacantes y Pasantías
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="./assets/css/theme.css")
+    body.profile
+        include header.pug
+        div.main-container
+            div.container
+                div.row
+                    div.col-12
+                        include tabs.pug
+                        //- General Content Wrapper
+                        div.general-content-wrapper.border-box
+                            include navigation.pug
+                            include detailBox.pug
+                            include dataTable.pug
+        include footer.pug
+        script(src="https://code.jquery.com/jquery-1.12.0.min.js")
+        script(src="assets/js/vendors/bootstrap.bundle.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js")
+        script(src="assets/js/vendors/slick.min.js")
+        script(src="assets/js/main.js")

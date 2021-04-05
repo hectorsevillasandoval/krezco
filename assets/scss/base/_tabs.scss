@@ -1,0 +1,41 @@
+.tabs {
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid #DFDFDF;
+    overflow: hidden;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 4%);
+    &__item {
+        width: calc(100%/3);
+        text-align: center;
+        //border: 1px solid red;
+        &.active {
+            a {
+                background: transparent linear-gradient(203deg, #9100FF 0%, #4B00FF 100%) 0% 0% no-repeat padding-box;
+                color: white !important;
+            }
+        }
+        &:nth-child(2) {
+            border-left: 1px solid #DFDFDF;
+            border-right: 1px solid #DFDFDF;
+        }
+    }
+    &__link {
+        display: block;
+        padding-top: 39px;
+        padding-bottom: 39px;
+        background-color: white;
+        font-size: 12px;
+        color: #646464;
+        font-weight: 600;
+        &:hover,
+        &:focus {
+            color: $purple;
+            background-color: rgb(100 100 100 / 4%);
+        }
+        @media #{$desktop} {
+            font-size: 18px;
+        }
+    }
+}
