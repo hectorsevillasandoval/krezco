@@ -33,10 +33,21 @@ a {
 }
 
 .general-content-wrapper {
-    padding: 55px 68px;
+    padding: 55px 30px;
     border-radius: 30px;
     margin-bottom: 100px;
     background-color: white;
+    @media screen and (min-width: 992px){
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+}
+.filters{
+    select{
+        font-size: 15px;
+        border-radius: 30px;
+        color: rgba(185, 185, 185, 1);
+    }
 }
 
 .back-button {

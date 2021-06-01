@@ -1,0 +1,126 @@
+doctype doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+        title Vacantes y Pasantías
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="./assets/css/theme.css")
+    body.profile
+        include header.pug
+        div.main-container
+            div.container
+                div.row
+                    div.col-12
+                        div.general-content-wrapper.border-box.mt-5.mb-4
+                            h5.box-title Impulsa tu conocimiento
+                            p.box-content.mb-0 Adquiere nuevas habilidades e impúlsate a desarrollar tu capacidades con los cursos y capactiaiones que ofrecen nuestros aliados. Mantente activo y activa en el mundo laboral, mejorando tu calidad de vida a través del aprendizaje, el logro de tus metas y persiguiento tus sueños
+                        
+                        div.general-content-wrapper.border-box.mb-4
+                            h5.box-title Recomendaciones
+                            p.box-content.mb-0 Según perfil de usuario
+
+                            .carousel.carousel-courses.mt-3
+                                .carousel__wrapper
+                                    .carousel__js
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__name Principios del Marketing Moderno
+                                                .item__views Visualizaciones: 123
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__name Principios del Marketing Moderno
+                                                .item__views Visualizaciones: 123
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__name Principios del Marketing Moderno
+                                                .item__views Visualizaciones: 123
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__name Principios del Marketing Moderno
+                                                .item__views Visualizaciones: 123
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__name Principios del Marketing Moderno
+                                                .item__views Visualizaciones: 123
+                            
+                        div.general-content-wrapper.border-box.mb-3
+                            h5.box-title Categoría principal
+                            p.box-content.mb-0 Descubre temas y habilidades
+
+                            .carousel.carousel-categories.mt-3
+                                .carousel__wrapper
+                                    .carousel__js
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__cat-name Ingeniería
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__cat-name Ingeniería
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__cat-name Ingeniería
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__cat-name Ingeniería
+                                        .item
+                                            .item__wrapper
+                                                img(src="https://via.placeholder.com/270x160", alt="")
+                                                .item__cat-name Ingeniería
+                        div.general-content-wrapper.border-box.mb-5.filters
+                            h5.box-title Filtrar
+                            form.row.align-items-center.justify-content-center.mt-3
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Categoría
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three 
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Tipo
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three 
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Nivel
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three 
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Formación
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three 
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Ubicación
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three 
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    select(class="form-select")
+                                        option(value="", selected) Centro de Formación
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three
+                                .col-12.col-md-6.col-xl-4.col-xxl.mb-3.mb-xxl-0
+                                    input(type="button", value="Buscar", class="btn btn--purple")
+        include footer.pug
+        script(src="https://code.jquery.com/jquery-1.12.0.min.js")
+        script(src="assets/js/vendors/bootstrap.bundle.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js")
+        script(src="assets/js/vendors/slick.min.js")
+        script(src="assets/js/main.js")

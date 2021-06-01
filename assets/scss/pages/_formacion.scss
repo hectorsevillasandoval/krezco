@@ -1,0 +1,102 @@
+.box-title{
+    color: #646464;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.box-content{
+    color: #646464;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.carousel{
+    .wrapper{
+        max-width: 1080px;
+    }
+    .slick-next{
+        right: -45px;
+        //background: red;
+        top: 80px;
+        font-size: 26px;
+        color: purple;
+        &:before{
+            content: '';
+        }
+        @media screen and (min-width: 768px){
+            right: -30px;
+        }
+        @media screen and (min-width: 1200px){
+            right: -45px;
+        }
+    }
+    .slick-prev{
+        left: -45px;
+        font-size: 26px;
+        color: purple;
+        top: 80px;
+        &:before{
+            content: '';
+        }
+        @media screen and (min-width: 768px){
+            left: -30px;
+        }
+        @media screen and (min-width: 1200px){
+            left: -45px;
+        }
+    }
+    .slick-dots{
+        bottom: -40px;
+        li{
+            button{
+                background-color: #D6D6D6;
+            }
+            &.slick-active{
+                button{
+                    background-color: purple;
+                }
+            }
+        }
+    }
+    .item{
+        //margin-right: 15px;
+        height: auto;
+        &__wrapper{
+            width: 270px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            @media screen and (min-width:768px){
+                text-align: left;
+            }
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        &__cat-name{
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: rgba(61, 61, 61, 1);
+        }
+        &__name{
+            font-size: 17px;
+            color: #3D3D3D;
+            font-family: 'Poppins';
+            margin-top: 12px;
+            margin-bottom: 6px;
+        }
+        &__views{
+            color: #0D0D0D;
+            font: normal normal medium 14px/21px 'Poppins';
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
